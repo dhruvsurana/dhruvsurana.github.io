@@ -1,0 +1,23 @@
+{
+  "name": "Dhruv Surana — Portfolio",
+  "short_name": "Dhruv Surana",
+  "description": "Data Analytics, Business Intelligence, Analytics Engineering & Product Management portfolio.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05071A",
+  "theme_color": "#05071A",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/og-image.jpg",
+      "sizes": "800x800",
+      "type": "image/jpeg"
+    }
+  ]
+}

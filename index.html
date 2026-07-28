@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ PRIMARY SEO ============ -->
+<title>Dhruv Surana — Data Analytics, BI & Product Portfolio</title>
+<meta name="description" content="Dhruv Surana is a Business Analytics & AI student at UT Dallas building data-driven solutions across Data Analytics, Business Intelligence, Analytics Engineering, and Product Management — dashboards, AI systems, and award-winning projects.">
+<meta name="author" content="Dhruv Surana">
+<meta name="keywords" content="Dhruv Surana, Data Analytics, Business Intelligence, Analytics Engineering, Product Management, Data Analyst, BI Developer, Tableau, Power BI, SQL, Python, BigQuery, UT Dallas, portfolio">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#05071A">
+
+<!-- Update this to your final domain after deployment (e.g. https://dhruvsurana.com) -->
+<link rel="canonical" href="https://dhruvsurana.com/">
+
+<!-- ============ OPEN GRAPH (LinkedIn / Facebook) ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dhruv Surana — Portfolio">
+<meta property="og:title" content="Dhruv Surana — Data Analytics, BI & Product Portfolio">
+<meta property="og:description" content="Business Analytics & AI student at UT Dallas building data-driven solutions across Data Analytics, Business Intelligence, Analytics Engineering, and Product Management.">
+<meta property="og:url" content="https://dhruvsurana.com/">
+<meta property="og:image" content="https://dhruvsurana.com/assets/og-image.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Dhruv Surana">
+<meta property="og:locale" content="en_US">
+
+<!-- ============ TWITTER CARD ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dhruv Surana — Data Analytics, BI & Product Portfolio">
+<meta name="twitter:description" content="Business Analytics & AI student at UT Dallas building data-driven solutions across Data Analytics, BI, Analytics Engineering, and Product Management.">
+<meta name="twitter:image" content="https://dhruvsurana.com/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="Dhruv Surana">
+
+<!-- ============ ICONS / PWA ============ -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/og-image.jpg">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- ============ FONTS ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============ STRUCTURED DATA (Person) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dhruv Surana",
+  "url": "https://dhruvsurana.com/",
+  "image": "https://dhruvsurana.com/assets/og-image.jpg",
+  "jobTitle": "Business Analytics & AI Student",
+  "description": "Data Analytics, Business Intelligence, Analytics Engineering, and Product Management.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "The University of Texas at Dallas"
+  },
+  "knowsAbout": [
+    "Data Analytics",
+    "Business Intelligence",
+    "Analytics Engineering",
+    "Product Management",
+    "SQL",
+    "Python",
+    "Tableau",
+    "Power BI",
+    "BigQuery",
+    "Data Modeling"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/dhruvsurana",
+    "https://github.com/dhruvsurana"
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#05071A;
+    --bg-soft:#080B22;
+    --card:#0D1130;
+    --card-hover:#111530;
+    --card-border:#1C2148;
+    --card-border-hover:#3A3560;
+    --text:#F4F6FB;
+    --text-dim:#9AA3C7;
+    --text-faint:#616a91;
+    --gold:#D9B45C;
+    --gold-soft:#E9D3A0;
+    --gold-dim:rgba(217,180,92,0.12);
+    --gold-line:rgba(217,180,92,0.35);
+    --display: 'Space Grotesk', sans-serif;
+    --body: 'Inter', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --maxw: 1180px;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--body);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  /* subtle background grid texture */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(217,180,92,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(217,180,92,0.035) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 70%);
+    pointer-events:none;
+    z-index:0;
+  }
+
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%;display:block;}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 48px;position:relative;z-index:1;}
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold-soft);
+    border:1px solid var(--gold-line);
+    background:var(--gold-dim);
+    padding:6px 16px;
+    border-radius:100px;
+    margin-bottom:24px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:6px;height:6px;border-radius:50%;
+    background:var(--gold);
+    box-shadow:0 0 8px var(--gold);
+  }
+
+  h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-0.02em;}
+
+  section{position:relative;z-index:1;padding:120px 0;}
+  section.tight{padding:100px 0;}
+
+  .section-head{margin-bottom:64px;max-width:640px;}
+  .section-head h2{font-size:40px;color:var(--text);line-height:1.1;}
+  .section-head .lead{color:var(--text-dim);font-size:16.5px;margin-top:16px;}
+
+  /* ================= NAV ================= */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(5,7,26,0.75);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  nav{
+    max-width:var(--maxw);margin:0 auto;padding:18px 48px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:19px;
+    letter-spacing:0.02em;
+  }
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:34px;}
+  .nav-links a{
+    font-size:14px;color:var(--text-dim);font-weight:500;
+    transition:color .25s ease;
+    position:relative;
+  }
+  .nav-links a:hover{color:var(--text);}
+  .nav-cta{
+    font-size:13.5px;
+    font-weight:600;
+    padding:10px 20px;
+    border-radius:8px;
+    border:1px solid var(--gold-line);
+    color:var(--gold-soft);
+    transition:all .25s ease;
+  }
+  .nav-cta:hover{background:var(--gold-dim);border-color:var(--gold);}
+
+  /* ================= BUTTONS ================= */
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 26px;
+    border-radius:9px;
+    font-size:14.5px;font-weight:600;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+    cursor:pointer;
+    border:1px solid transparent;
+  }
+  .btn svg{width:17px;height:17px;}
+  .btn-primary{
+    background:linear-gradient(135deg,var(--gold),#c99f43);
+    color:#191204;
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(217,180,92,0.45);}
+  .btn-ghost{
+    border:1px solid rgba(255,255,255,0.14);
+    color:var(--text);
+    background:rgba(255,255,255,0.02);
+  }
+  .btn-ghost:hover{border-color:var(--gold-line);transform:translateY(-2px);background:rgba(217,180,92,0.06);}
+  .btn-outline{
+    border:1px solid var(--card-border);
+    color:var(--text-dim);
+    font-size:13px;
+    padding:11px 20px;
+  }
+  .btn-outline:hover{border-color:var(--gold-line);color:var(--gold-soft);transform:translateY(-2px);}
+  .icon-btn{
+    width:44px;height:44px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    border:1px solid rgba(255,255,255,0.14);
+    transition:all .25s ease;
+  }
+  .icon-btn:hover{border-color:var(--gold);background:var(--gold-dim);transform:translateY(-2px);box-shadow:0 0 18px -4px var(--gold);}
+  .icon-btn svg{width:18px;height:18px;stroke:var(--text-dim);}
+  .icon-btn:hover svg{stroke:var(--gold-soft);}
+
+  /* ================= HERO ================= */
+  .hero{
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding-top:120px;
+    position:relative;
+  }
+  .hero .wrap{
+    display:grid;
+    grid-template-columns:1.15fr 0.85fr;
+    align-items:center;
+    gap:56px;
+  }
+  .hero-kicker{
+    display:inline-flex;align-items:center;gap:12px;
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--gold-soft);
+    margin-bottom:34px;
+  }
+  .hero-kicker::before{
+    content:"";width:38px;height:1px;background:var(--gold-line);
+  }
+  .hero h1{
+    font-size:82px;
+    line-height:0.96;
+    color:var(--text);
+    margin-bottom:26px;
+    letter-spacing:-0.03em;
+  }
+  .hero h1 .accent{color:var(--gold);}
+  .hero .subtitle{
+    font-size:20px;
+    color:var(--text-dim);
+    font-weight:500;
+    margin-bottom:6px;
+  }
+  .hero .subtitle b{color:var(--text);font-weight:600;}
+  .hero .school{
+    font-size:14.5px;
+    color:var(--text-faint);
+    margin-bottom:30px;
+    font-family:var(--mono);
+    letter-spacing:0.02em;
+  }
+  .hero .tagline{
+    font-size:19px;
+    line-height:1.5;
+    color:var(--text);
+    max-width:500px;
+    margin-bottom:44px;
+    font-weight:400;
+    border-left:2px solid var(--gold-line);
+    padding-left:20px;
+  }
+  .hero .tagline b{color:var(--gold-soft);font-weight:600;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;}
+
+  .hero-photo-wrap{
+    position:relative;
+    display:flex;justify-content:center;
+    align-items:center;
+  }
+  .hero-photo{
+    width:370px;height:460px;
+    border-radius:22px;
+    background:linear-gradient(160deg, #12173a, #0a0d24);
+    border:1px solid var(--card-border);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 40px 80px -30px rgba(0,0,0,0.7);
+  }
+  .hero-photo::after{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(217,180,92,0.14), transparent 55%);
+  }
+  .hero-photo .ph-initials{
+    font-family:var(--display);
+    font-size:70px;font-weight:700;
+    color:var(--gold-soft);
+    opacity:0.9;
+  }
+  .hero-photo .ph-label{
+    margin-top:14px;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--text-faint);
+    border:1px dashed var(--card-border-hover);
+    padding:6px 14px;border-radius:100px;
+  }
+  .hero-stat-chip{
+    position:absolute;
+    background:rgba(13,17,48,0.92);
+    backdrop-filter:blur(8px);
+    border:1px solid var(--card-border);
+    border-radius:14px;
+    padding:14px 18px;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--text-dim);
+    box-shadow:0 20px 40px -12px rgba(0,0,0,0.6);
+  }
+  .hero-stat-chip b{display:block;color:var(--gold-soft);font-size:22px;font-family:var(--display);letter-spacing:0;margin-bottom:2px;}
+  .chip-1{top:26px;left:-34px;}
+  .chip-2{bottom:34px;right:-34px;}
+
+  /* ================= FADE / MOTION ================= */
+  .fade-up{
+    opacity:0;
+    transform:translateY(30px);
+    transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1);
+    will-change:opacity, transform;
+  }
+  .fade-up.in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .fade-up{transition:none;opacity:1;transform:none;}
+  }
+
+  /* ================= ABOUT ================= */
+  .about-grid{
+    display:grid;
+    grid-template-columns:0.85fr 1.45fr;
+    gap:70px;
+    align-items:start;
+  }
+  .about-grid h2{
+    font-size:54px;
+    line-height:1.06;
+    position:sticky;
+    top:140px;
+  }
+  .about-grid h2 span{color:var(--gold);}
+  .about-copy p{
+    font-size:18px;
+    line-height:1.75;
+    color:var(--text-dim);
+    margin-bottom:26px;
+    max-width:640px;
+  }
+  .about-copy p b{color:var(--text);font-weight:600;}
+  .about-copy p:last-child{margin-bottom:0;}
+
+  /* ================= SKILLS ================= */
+  .skills4{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border:1px solid var(--card-border);
+    border-radius:22px;
+    background:var(--card);
+    overflow:hidden;
+  }
+  .skill-col{
+    padding:34px 26px;
+    border-right:1px solid var(--card-border);
+    transition:background .35s ease;
+  }
+  .skill-col:last-child{border-right:none;}
+  .skill-col:hover{background:var(--card-hover);}
+  .skill-col-head{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+  .skill-col-ic{
+    width:38px;height:38px;border-radius:10px;
+    background:var(--gold-dim);border:1px solid var(--gold-line);
+    display:flex;align-items:center;justify-content:center;
+    transition:box-shadow .3s ease;
+  }
+  .skill-col:hover .skill-col-ic{box-shadow:0 0 20px -4px var(--gold);}
+  .skill-col-ic svg{width:19px;height:19px;stroke:var(--gold-soft);}
+  .skill-col-head h4{font-size:15.5px;color:var(--text);line-height:1.25;}
+  .skill-sub{
+    font-family:var(--mono);
+    font-size:10.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--text-faint);
+    margin:22px 0 12px;
+  }
+  .skill-sub:first-of-type{margin-top:0;}
+  .tool-list{display:flex;flex-direction:column;gap:9px;}
+  .tool{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:9px 12px;border-radius:10px;
+    background:var(--bg-soft);border:1px solid var(--card-border);
+    font-size:13px;color:var(--text-dim);font-weight:500;
+    transition:transform .25s ease, border-color .25s ease, color .25s ease, box-shadow .25s ease;
+  }
+  .tool:hover{
+    border-color:var(--gold-line);color:var(--text);
+    transform:translateX(3px);
+    box-shadow:0 8px 22px -14px rgba(217,180,92,0.6);
+  }
+  .tool-ic{width:19px;height:19px;object-fit:contain;flex-shrink:0;}
+  .tool-ic-fb{
+    width:19px;height:19px;border-radius:5px;
+    background:var(--gold-dim);border:1px solid var(--gold-line);
+    display:inline-flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:7.5px;font-weight:600;color:var(--gold-soft);
+    flex-shrink:0;
+  }
+  .cap-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .cap{
+    padding:6px 12px;border-radius:100px;
+    font-size:12px;color:var(--text-dim);
+    border:1px solid var(--card-border);background:transparent;
+    transition:border-color .25s ease, color .25s ease;
+  }
+  .cap:hover{border-color:var(--gold-line);color:var(--gold-soft);}
+  .learn{color:var(--gold);font-size:9px;vertical-align:super;margin-left:1px;}
+  .skills-legend{
+    margin-top:22px;font-family:var(--mono);font-size:11.5px;
+    color:var(--text-faint);letter-spacing:0.04em;
+  }
+  .skills-legend b{color:var(--gold-soft);font-weight:500;}
+
+  /* AI CALLOUT */
+  .ai-callout{
+    margin-top:32px;
+    border:1px solid var(--gold-line);
+    border-radius:22px;
+    background:
+      radial-gradient(circle at 0% 0%, rgba(217,180,92,0.10), transparent 55%),
+      var(--card);
+    padding:34px 40px;
+    display:flex;flex-direction:column;align-items:stretch;
+    gap:24px;
+  }
+  .ai-callout-left{display:flex;align-items:center;gap:20px;}
+  .ai-spark{
+    width:54px;height:54px;border-radius:14px;flex-shrink:0;
+    background:var(--gold-dim);border:1px solid var(--gold-line);
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;color:var(--gold);
+    box-shadow:0 0 24px -6px var(--gold);
+  }
+  .ai-callout-left h3{font-size:21px;color:var(--text);margin-bottom:4px;}
+  .ai-callout-left p{font-size:14px;color:var(--text-dim);}
+  .ai-tools{display:flex;flex-wrap:wrap;gap:10px;}
+  .ai-chip{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:9px 15px;border-radius:100px;
+    background:var(--bg-soft);border:1px solid var(--card-border);
+    font-size:13px;color:var(--text);font-weight:500;font-family:inherit;
+    transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  button.ai-chip{cursor:pointer;}
+  .ai-chip:hover{transform:translateY(-3px);border-color:var(--gold-line);box-shadow:0 10px 24px -14px rgba(217,180,92,0.7);}
+  .ai-chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .ai-chip.active{border-color:var(--gold);background:var(--gold-dim);color:var(--text);}
+  .ai-chip img,.ai-chip .tool-ic-fb,.ai-chip svg{width:18px;height:18px;flex-shrink:0;}
+
+  /* ================= EDUCATION ================= */
+  .edu-card{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:44px;
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:22px;
+    padding:48px;
+    align-items:start;
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .edu-card:hover{transform:translateY(-4px);border-color:var(--card-border-hover);}
+  .edu-logo{
+    width:120px;height:120px;
+    border-radius:18px;
+    background:var(--bg-soft);
+    border:1px solid var(--card-border);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-weight:700;
+    font-size:28px;color:var(--gold-soft);
+  }
+  .edu-info h3{font-size:25px;margin-bottom:6px;}
+  .edu-info .degree{color:var(--text-dim);font-size:16px;margin-bottom:28px;}
+  .edu-facts{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px 40px;
+  }
+  .edu-fact .label{
+    font-family:var(--mono);font-size:11px;
+    letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--text-faint);margin-bottom:6px;
+  }
+  .edu-fact .value{font-size:15.5px;color:var(--text);font-weight:500;}
+  .edu-fact .value .gpa{color:var(--gold-soft);}
+  .edu-block{margin-top:30px;}
+  .edu-block .label{
+    font-family:var(--mono);font-size:11px;
+    letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--text-faint);margin-bottom:12px;
+  }
+  .edu-tags{display:flex;gap:12px;flex-wrap:wrap;}
+  .edu-tag{
+    font-size:12.5px;font-family:var(--mono);
+    padding:8px 15px;border-radius:100px;
+    border:1px solid var(--gold-line);
+    color:var(--gold-soft);background:var(--gold-dim);
+  }
+
+  /* ================= EXPERIENCE ================= */
+  .exp-card{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:22px;
+    padding:44px;
+    margin-bottom:26px;
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .exp-card:hover{transform:translateY(-4px);border-color:var(--card-border-hover);}
+  .exp-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:26px;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+  .exp-head-left{display:flex;gap:20px;align-items:center;}
+  .exp-logo{
+    width:58px;height:58px;border-radius:14px;
+    background:var(--bg-soft);
+    border:1px solid var(--card-border);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-weight:700;font-size:17px;
+    color:var(--gold-soft);
+    flex-shrink:0;
+  }
+  .exp-role{font-size:20px;margin-bottom:4px;}
+  .exp-company{font-size:14.5px;color:var(--text-dim);}
+  .exp-company b{color:var(--gold-soft);font-weight:500;}
+  .exp-dates{
+    font-family:var(--mono);font-size:12.5px;
+    color:var(--gold-soft);
+    border:1px solid var(--gold-line);
+    background:var(--gold-dim);
+    padding:7px 14px;border-radius:100px;
+    white-space:nowrap;
+    height:fit-content;
+  }
+  .exp-bullets{margin-bottom:26px;}
+  .exp-bullets li{
+    font-size:14.5px;color:var(--text-dim);
+    padding-left:24px;position:relative;
+    margin-bottom:13px;line-height:1.6;
+  }
+  .exp-bullets li:last-child{margin-bottom:0;}
+  .exp-bullets li::before{
+    content:"";
+    position:absolute;left:0;top:8px;
+    width:8px;height:8px;border-radius:2px;
+    background:var(--gold);
+    transform:rotate(45deg);
+  }
+  .exp-bullets li b{color:var(--text);font-weight:600;}
+  .exp-foot{
+    border-top:1px solid var(--card-border);
+    padding-top:24px;
+    display:grid;grid-template-columns:1fr 1fr;gap:32px;
+  }
+  .exp-foot .label{
+    font-family:var(--mono);font-size:10.5px;
+    letter-spacing:0.12em;text-transform:uppercase;
+    color:var(--gold-soft);margin-bottom:14px;
+  }
+  .exp-foot .tool-row{display:flex;flex-wrap:wrap;gap:9px;}
+
+  /* ================= PROJECTS ================= */
+  /* Filter bar */
+  .proj-filter{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:56px;}
+  .pf-btn{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:var(--body);font-size:14px;font-weight:500;
+    color:var(--text-dim);cursor:pointer;
+    background:var(--card);border:1px solid var(--card-border);
+    padding:10px 18px;border-radius:100px;
+    transition:color .25s ease, border-color .25s ease, background .25s ease;
+  }
+  .pf-btn:hover{border-color:var(--gold-line);color:var(--text);}
+  .pf-btn.active{background:var(--gold-dim);border-color:var(--gold-line);color:var(--gold-soft);}
+  .pf-count{
+    font-family:var(--mono);font-size:11px;
+    background:var(--bg-soft);border:1px solid var(--card-border);
+    color:var(--text-faint);padding:1px 8px;border-radius:100px;
+  }
+  .pf-btn.active .pf-count{color:var(--gold-soft);border-color:var(--gold-line);}
+  .pf-btn:focus-visible,.details-toggle:focus-visible,.readmore-btn:focus-visible,.pdrop-btn:focus-visible{
+    outline:2px solid var(--gold);outline-offset:3px;
+  }
+
+  /* Domain groups */
+  .domain-group{margin-bottom:84px;}
+  .domain-group:last-child{margin-bottom:0;}
+  .domain-group[hidden]{display:none;}
+  .domain-head{margin-bottom:34px;display:flex;align-items:flex-start;gap:18px;}
+  .domain-head-ic{
+    width:48px;height:48px;border-radius:13px;flex-shrink:0;
+    background:var(--gold-dim);border:1px solid var(--gold-line);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .domain-head-ic svg{width:24px;height:24px;stroke:var(--gold-soft);}
+  .domain-head h3{font-size:25px;color:var(--text);margin-bottom:7px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .domain-head .dcount{font-family:var(--mono);font-size:11.5px;color:var(--text-faint);border:1px solid var(--card-border);padding:2px 10px;border-radius:100px;}
+  .domain-head p{font-size:15px;color:var(--text-dim);max-width:640px;line-height:1.6;}
+
+  /* Grid */
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+
+  /* Card */
+  .pcard{
+    display:flex;flex-direction:column;
+    border:1px solid var(--card-border);border-radius:20px;
+    background:var(--card);overflow:hidden;
+    transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+  }
+  .pcard:hover{transform:translateY(-6px);border-color:var(--card-border-hover);box-shadow:0 40px 80px -44px rgba(0,0,0,0.85);}
+  /* Media adapts to each image's aspect ratio → full image visible, minimal empty space */
+  .pcard-media{
+    position:relative;overflow:hidden;
+    border-bottom:1px solid var(--card-border);
+    background:
+      radial-gradient(circle at 50% 30%, rgba(217,180,92,0.05), transparent 60%),
+      linear-gradient(160deg,#10143a,#0a0d24);
+    display:flex;align-items:center;justify-content:center;
+  }
+  /* Landscape / dashboard / workflow: image fills the card width, container height follows
+     the image → no letterbox gaps, and the dashboard is as large as possible. */
+  .pcard-media img{width:100%;height:auto;max-height:460px;object-fit:contain;display:block;transition:transform .5s ease;}
+  .pcard:hover .pcard-media img{transform:scale(1.03);}
+  .pcard-media[data-layout="workflow"]{background:linear-gradient(160deg,#0c1030,#080b22);}
+  /* Portrait (tall single screens): fit by height so it doesn't blow up the card */
+  .pcard-media[data-layout="portrait"]{aspect-ratio:4/5;padding:14px;}
+  .pcard-media[data-layout="portrait"] img{width:auto;height:100%;max-width:100%;max-height:none;}
+  /* Placeholder keeps a clean landscape box */
+  .pcard-media[data-layout="placeholder"]{aspect-ratio:16/9;}
+  .pcard-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+  .pcard-ph::before{content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(217,180,92,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(217,180,92,.06) 1px,transparent 1px);
+    background-size:38px 38px;mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000,transparent 75%);}
+  .pcard-ph span{z-index:1;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-faint);
+    border:1px dashed var(--card-border-hover);padding:9px 16px;border-radius:100px;background:rgba(5,7,26,.55);text-align:center;max-width:82%;line-height:1.5;}
+  .pcard-badge{
+    position:absolute;top:14px;left:14px;z-index:2;
+    display:inline-flex;align-items:center;gap:7px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.03em;
+    color:#191204;background:linear-gradient(135deg,var(--gold),#c99f43);
+    border:1px solid rgba(255,255,255,.18);
+    padding:7px 13px;border-radius:100px;
+    box-shadow:0 12px 26px -10px rgba(217,180,92,.85);
+  }
+  .pcard-badge svg{width:14px;height:14px;stroke:#191204;}
+  .pcard-badge b{font-weight:700;}
+
+  .pcard-body{padding:26px;display:flex;flex-direction:column;flex:1;}
+  .pcard-comp{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--gold-soft);
+    margin-bottom:12px;display:flex;align-items:center;gap:7px;line-height:1.4;}
+  .pcard-comp svg{width:14px;height:14px;stroke:var(--gold-soft);flex-shrink:0;}
+  .pcard-title{font-size:20px;line-height:1.25;margin-bottom:13px;}
+  .pcard-desc{font-size:14.5px;line-height:1.7;color:var(--text-dim);}
+  .pcard-desc strong{color:var(--gold-soft);font-weight:600;}
+  .pcard-desc.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;}
+  .readmore-btn{align-self:flex-start;margin-top:10px;background:none;border:none;cursor:pointer;
+    font-family:var(--body);font-size:13px;font-weight:600;color:var(--gold-soft);display:inline-flex;align-items:center;gap:5px;padding:2px 0;}
+  .readmore-btn:hover{color:var(--gold);}
+  .readmore-btn svg{width:13px;height:13px;transition:transform .3s ease;}
+  .readmore-btn.open svg{transform:rotate(180deg);}
+
+  .pcard-sub{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);margin:22px 0 12px;}
+  .pcard-tools{display:flex;flex-wrap:wrap;gap:8px;}
+  .pcard .tool{font-size:12.5px;padding:7px 11px;}
+  .pcard .tool:hover{transform:translateY(-2px);}
+
+  .pcard-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;align-items:center;}
+  .btn-sm{padding:10px 16px;font-size:13px;border-radius:8px;}
+  .btn-disabled{opacity:.55;cursor:not-allowed;}
+  .btn-disabled .soon{font-family:var(--mono);font-size:9.5px;border:1px solid currentColor;border-radius:100px;padding:1px 6px;margin-left:2px;}
+  .ext-ic{width:13px;height:13px;}
+
+  /* Presentations / More dropdown */
+  .pdrop{position:relative;}
+  .pdrop-btn{cursor:pointer;}
+  .pdrop-menu{
+    position:absolute;bottom:calc(100% + 8px);left:0;z-index:6;min-width:220px;
+    background:var(--card);border:1px solid var(--card-border-hover);border-radius:12px;padding:6px;
+    box-shadow:0 24px 50px -20px rgba(0,0,0,.9);display:none;flex-direction:column;gap:2px;
+  }
+  .pdrop.open .pdrop-menu{display:flex;}
+  .pdrop-menu a{display:flex;align-items:center;gap:9px;padding:10px 12px;border-radius:8px;font-size:13px;color:var(--text-dim);transition:background .2s ease,color .2s ease;}
+  .pdrop-menu a:hover{background:var(--bg-soft);color:var(--gold-soft);}
+  .pdrop-menu a svg{width:13px;height:13px;flex-shrink:0;}
+
+  /* Expandable details */
+  .pcard-details{margin-top:22px;border-top:1px solid var(--card-border);padding-top:18px;}
+  .details-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;
+    background:none;border:none;cursor:pointer;padding:0;font-family:var(--body);font-size:13.5px;font-weight:600;color:var(--text);}
+  .details-toggle:hover{color:var(--gold-soft);}
+  .details-toggle .chev{width:16px;height:16px;stroke:var(--gold-soft);transition:transform .3s ease;flex-shrink:0;}
+  .details-toggle[aria-expanded="true"] .chev{transform:rotate(180deg);}
+  .details-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease;}
+  .details-panel>.details-clip{overflow:hidden;min-height:0;}
+  .pcard-details.open .details-panel{grid-template-rows:1fr;}
+  .details-inner{padding-top:16px;}
+  .details-inner .label{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:12px;}
+  @media (prefers-reduced-motion: reduce){
+    .details-panel{transition:none;}
+    .pcard-media img,.pcard:hover .pcard-media img{transition:none;transform:none;}
+  }
+
+  /* ================= RECOGNITION ================= */
+  .honors-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+  }
+  .honor-card{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:18px;
+    padding:32px 24px;
+    transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  }
+  .honor-card:hover{transform:translateY(-6px);border-color:var(--gold-line);box-shadow:0 30px 60px -35px rgba(217,180,92,0.35);}
+  .honor-icon{
+    width:52px;height:52px;margin-bottom:20px;
+    border-radius:14px;
+    background:var(--gold-dim);
+    border:1px solid var(--gold-line);
+    display:flex;align-items:center;justify-content:center;
+    transition:box-shadow .3s ease;
+  }
+  .honor-card:hover .honor-icon{box-shadow:0 0 22px -4px var(--gold);}
+  .honor-icon svg{width:24px;height:24px;stroke:var(--gold-soft);}
+  .honor-card h4{font-size:16px;margin-bottom:8px;line-height:1.3;}
+  .honor-card p{font-size:13px;color:var(--text-faint);line-height:1.5;}
+
+  /* ================= LEADERSHIP ================= */
+  .lead-hero{
+    position:relative;overflow:hidden;
+    border:1px solid var(--gold-line);
+    border-radius:22px;
+    background:
+      radial-gradient(circle at 100% 0%, rgba(217,180,92,0.16), transparent 50%),
+      linear-gradient(135deg, rgba(217,180,92,0.08), rgba(13,17,48,0.4));
+    padding:40px 44px;
+    margin-bottom:40px;
+    display:flex;align-items:center;gap:28px;flex-wrap:wrap;
+  }
+  .lead-hero-ic{
+    width:70px;height:70px;border-radius:18px;flex-shrink:0;
+    background:linear-gradient(135deg,var(--gold),#c99f43);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 34px -6px var(--gold);
+  }
+  .lead-hero-ic svg{width:34px;height:34px;stroke:#191204;}
+  .lead-hero-txt{flex:1;min-width:260px;}
+  .lead-hero-txt .tagpill{
+    display:inline-block;font-family:var(--mono);font-size:11px;
+    letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-soft);
+    border:1px solid var(--gold-line);border-radius:100px;padding:5px 13px;margin-bottom:14px;
+  }
+  .lead-hero-txt h3{font-size:27px;color:var(--gold-soft);margin-bottom:8px;}
+  .lead-hero-txt p{font-size:14.5px;color:var(--text-dim);max-width:640px;line-height:1.6;}
+
+  .lead-subhead{
+    font-family:var(--mono);font-size:12px;letter-spacing:0.14em;
+    text-transform:uppercase;color:var(--text-faint);
+    margin:0 0 20px;display:flex;align-items:center;gap:14px;
+  }
+  .lead-subhead::after{content:"";flex:1;height:1px;background:var(--card-border);}
+  .lead-group{margin-bottom:40px;}
+  .lead-group:last-child{margin-bottom:0;}
+  .leadership-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+  .leadership-card{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:16px;
+    padding:24px;
+    display:flex;align-items:center;gap:16px;
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .leadership-card:hover{transform:translateY(-5px);border-color:var(--card-border-hover);}
+  .leadership-logo{
+    width:48px;height:48px;border-radius:12px;
+    background:var(--bg-soft);
+    border:1px solid var(--card-border);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-weight:700;font-size:14px;
+    color:var(--gold-soft);flex-shrink:0;
+  }
+  .leadership-card h4{font-size:15px;margin-bottom:3px;}
+  .leadership-card p{font-size:12.5px;color:var(--text-faint);}
+
+  /* ================= CONTACT ================= */
+  .contact-section{
+    text-align:center;
+    padding:140px 0;
+  }
+  .contact-section .eyebrow{margin-bottom:24px;}
+  .contact-section h2{
+    font-size:48px;max-width:780px;margin:0 auto 20px;
+    line-height:1.15;
+  }
+  .contact-section h2 span{color:var(--gold);}
+  .contact-section .sub{
+    color:var(--text-dim);font-size:16px;margin-bottom:48px;
+  }
+  .contact-icons{
+    display:flex;justify-content:center;gap:20px;
+  }
+
+  footer{
+    border-top:1px solid rgba(255,255,255,0.06);
+    padding:32px 0;
+    text-align:center;
+    font-size:13px;
+    color:var(--text-faint);
+    font-family:var(--mono);
+  }
+
+  /* ================= LOGO IMAGES (edu / exp / leadership / orgs) ================= */
+  /* Logos sit on a clean white tile so every mark stays fully visible & consistent */
+  .edu-logo img,.exp-logo img,.leadership-logo img{
+    width:100%;height:100%;object-fit:contain;
+    background:#fff;border-radius:inherit;
+  }
+  .edu-logo img{padding:14px;}
+  .exp-logo img{padding:8px;}
+  .leadership-logo img{padding:7px;}
+  /* When a logo image is present, drop the monogram text styling */
+  .edu-logo.has-img,.exp-logo.has-img,.leadership-logo.has-img{
+    background:#fff;overflow:hidden;
+  }
+
+  /* ================= HERO PHOTO ================= */
+  .hero-photo img{
+    width:100%;height:100%;object-fit:cover;object-position:center 18%;
+  }
+  .hero-photo.has-img::after{display:none;}
+  /* keep the floating stat chips above the photo */
+  .hero-stat-chip{z-index:3;}
+
+  /* ================= SKILL CLICK / TOOL BUTTONS ================= */
+  button.tool{
+    cursor:pointer;font-family:var(--body);text-align:left;
+    background:var(--bg-soft);
+  }
+  button.tool:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .tool-hint{
+    margin-top:18px;font-family:var(--mono);font-size:11.5px;
+    color:var(--text-faint);letter-spacing:0.03em;display:flex;align-items:center;gap:8px;
+  }
+  .tool-hint svg{width:14px;height:14px;stroke:var(--gold-soft);}
+
+  /* ================= COMPETITION AWARD BADGE (below image, above title) ================= */
+  .pcard-award{
+    display:inline-flex;align-items:center;gap:8px;align-self:flex-start;
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.02em;line-height:1.3;
+    color:#191204;background:linear-gradient(135deg,var(--gold),#c99f43);
+    border:1px solid rgba(255,255,255,.18);
+    padding:6px 13px;border-radius:100px;margin-bottom:15px;
+    box-shadow:0 10px 22px -12px rgba(217,180,92,.8);
+  }
+  .pcard-award svg{width:14px;height:14px;stroke:#191204;flex-shrink:0;}
+  .pcard-award b{font-weight:700;}
+
+  /* ================= SKILL FILTER (projects) ================= */
+  .pcard{transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease, opacity .3s ease, filter .3s ease;}
+  .pcard.dim{opacity:.24;filter:saturate(.4);pointer-events:none;}
+  .domain-group.dim-empty{display:none;}
+  .skill-filter-note{
+    display:none;align-items:center;gap:14px;margin:-30px 0 44px;
+    font-size:13.5px;color:var(--text-dim);
+    background:var(--card);border:1px solid var(--gold-line);
+    border-radius:100px;padding:9px 9px 9px 18px;width:fit-content;max-width:100%;
+  }
+  .skill-filter-note.show{display:inline-flex;}
+  .skill-filter-note .sf-icon{width:16px;height:16px;stroke:var(--gold-soft);flex-shrink:0;}
+  .skill-filter-note b{color:var(--gold-soft);font-weight:600;}
+  .skill-filter-clear{
+    display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+    font-family:var(--body);font-size:12.5px;font-weight:600;color:var(--text-dim);
+    background:var(--bg-soft);border:1px solid var(--card-border);
+    padding:6px 13px;border-radius:100px;transition:color .2s ease,border-color .2s ease;
+  }
+  .skill-filter-clear:hover{color:var(--gold-soft);border-color:var(--gold-line);}
+  .skill-filter-clear:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .skill-filter-clear svg{width:12px;height:12px;stroke:currentColor;}
+  @media (prefers-reduced-motion: reduce){
+    .pcard{transition:none;}
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width:1024px){
+    .skills4{grid-template-columns:repeat(2,1fr);}
+    .skill-col:nth-child(2){border-right:none;}
+    .skill-col:nth-child(1),.skill-col:nth-child(2){border-bottom:1px solid var(--card-border);}
+  }
+  @media (max-width:900px){
+    .wrap{padding:0 28px;}
+    nav{padding:16px 28px;}
+    .nav-links{display:none;}
+    .about-grid, .hero .wrap{grid-template-columns:1fr;}
+    .hero h1{font-size:60px;}
+    .about-grid h2{position:static;font-size:42px;}
+    .leadership-grid{grid-template-columns:1fr;}
+    .honors-row{grid-template-columns:repeat(2,1fr);}
+    .exp-foot{grid-template-columns:1fr;gap:24px;}
+    .proj-grid{grid-template-columns:1fr;gap:22px;}
+    .domain-group{margin-bottom:60px;}
+    .edu-card{grid-template-columns:1fr;gap:28px;}
+    .edu-facts{grid-template-columns:1fr 1fr;}
+    .hero-photo{width:100%;max-width:340px;}
+    .chip-1{left:0;}.chip-2{right:0;}
+  }
+  @media (max-width:560px){
+    .skills4{grid-template-columns:1fr;}
+    .skill-col{border-right:none;border-bottom:1px solid var(--card-border);}
+    .skill-col:last-child{border-bottom:none;}
+    .honors-row{grid-template-columns:1fr;}
+    .hero h1{font-size:48px;}
+    .ai-callout{flex-direction:column;align-items:flex-start;}
+    .contact-section h2{font-size:32px;}
+    .contact-section .sub{font-size:14.5px;}
+    .skill-filter-note{margin:-14px 0 32px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">DHRUV<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#leadership">Leadership</a>
+    </div>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="hero-kicker fade-up">Professional Portfolio &nbsp;•&nbsp; 2026</div>
+      <h1 class="fade-up">DHRUV<br><span class="accent">SURANA</span></h1>
+      <p class="subtitle fade-up"><b>Business Analytics &amp; AI Student</b></p>
+      <p class="school fade-up">The University of Texas at Dallas</p>
+      <p class="tagline fade-up">Building <b>data-driven solutions</b> that create measurable business impact.</p>
+      <div class="hero-actions fade-up">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Dhruv_Surana_Data_Analyst_Resume.pdf" class="btn btn-ghost" download="Dhruv_Surana_Data_Analyst_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap fade-up">
+      <div class="hero-photo has-img">
+        <img src="images/portfolio/dhruv-surana.webp" alt="Portrait of Dhruv Surana, Business Analytics &amp; AI student at UT Dallas" width="900" height="900">
+      </div>
+      <div class="hero-stat-chip chip-1"><b>3.98</b>GPA</div>
+      <div class="hero-stat-chip chip-2"><b>Junior</b>Graduating May 2028</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow fade-up">About Me</div>
+    <div class="about-grid">
+      <h2 class="fade-up">Hello,<br>I'm <span>Dhruv.</span></h2>
+      <div class="about-copy">
+        <p class="fade-up">I've always been fascinated by how businesses work—why some decisions create impact while others don't. That curiosity led me to <b>Business Analytics</b>, where I discovered that data isn't just about understanding the past; it's about solving real business problems, building better products, and creating measurable value.</p>
+        <p class="fade-up">Today, I enjoy combining <b>data, analytics, and emerging AI tools</b> to build intelligent solutions—from dashboards and automation workflows to data-driven products. Along the way, I've developed strong foundations in <b>SQL, Python, data modelling, dashboard development, and product thinking</b>, always focusing on the business problem before the technical solution.</p>
+        <p class="fade-up">Whether I'm analysing data, building an analytics pipeline, or exploring AI-powered workflows, my goal remains the same: to turn complex business challenges into <b>simple, scalable, and impactful solutions</b>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="tight">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Technical Skills</div>
+      <h2>The stack behind the work</h2>
+      <p class="lead">A blend of data engineering, business intelligence, and product tooling — the technologies I use to take an idea from raw data to decision.</p>
+    </div>
+
+    <p class="tool-hint fade-up">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      Tip: click any tool to jump to the projects that use it.
+    </p>
+
+    <!-- Technical Skills are rendered from the central tool registry (see script) -->
+    <div class="skills4 fade-up" id="skills-grid"></div>
+
+    <p class="skills-legend fade-up"><b>★</b> = actively learning &amp; building familiarity</p>
+
+    <!-- AI CALLOUT -->
+    <div class="ai-callout fade-up">
+      <div class="ai-callout-left">
+        <div class="ai-spark">✦</div>
+        <div>
+          <h3>Passionate about AI &amp; Automation</h3>
+          <p>I live in the modern AI stack — click any tool to see the projects it powers.</p>
+        </div>
+      </div>
+      <div class="ai-tools" id="ai-tools"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="tight">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Education</div>
+      <h2>Academic Foundation</h2>
+    </div>
+    <div class="edu-card fade-up">
+      <div class="edu-logo has-img"><img src="images/education/utd-logo.webp" alt="The University of Texas at Dallas logo" width="200" height="200" loading="lazy"></div>
+      <div class="edu-info">
+        <h3>The University of Texas at Dallas</h3>
+        <p class="degree">Bachelor of Science — Business Analytics &amp; Artificial Intelligence</p>
+        <div class="edu-facts">
+          <div class="edu-fact"><div class="label">GPA</div><div class="value"><span class="gpa">3.98</span> / 4.00</div></div>
+          <div class="edu-fact"><div class="label">Expected Graduation</div><div class="value">May 2028</div></div>
+          <div class="edu-fact"><div class="label">Minor</div><div class="value">Innovation &amp; Entrepreneurship</div></div>
+        </div>
+        <div class="edu-block">
+          <div class="label">Honors</div>
+          <div class="edu-tags">
+            <div class="edu-tag">Dean's List — Fall 2024</div>
+            <div class="edu-tag">Dean's List — Spring 2025</div>
+            <div class="edu-tag">Dean's List — Fall 2025</div>
+            <div class="edu-tag">Academic Excellence Scholar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Professional Experience</div>
+      <h2>Where I've worked</h2>
+    </div>
+
+    <div class="exp-card fade-up">
+      <div class="exp-head">
+        <div class="exp-head-left">
+          <div class="exp-logo has-img"><img src="images/experience/vendors-first-logo.webp" alt="Vendors First logo" width="200" height="200" loading="lazy"></div>
+          <div>
+            <div class="exp-role">Data Analytics &amp; AI Intern</div>
+            <div class="exp-company"><b>Vendors First</b> · Remote</div>
+          </div>
+        </div>
+        <div class="exp-dates">Jul 2026 – Present</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Built an <b>end-to-end government-procurement analytics platform</b> processing <b>2,500+ federal contract and assistance awards</b> across <b>4 California counties</b>, developing Python ETL pipelines that integrate USAspending data into PostgreSQL.</li>
+        <li>Designed scalable data models powering <b>8 executive dashboards</b> covering procurement trends, vendor concentration, agency performance, funding utilization, and payment analytics for county governments.</li>
+        <li>Automated ingestion, transformation, and validation across <b>6 federal award categories</b> and engineered reusable validation workflows that caught data-quality errors upstream, replacing manual prep and improving reporting reliability for executive decisions.</li>
+        <li>Partnered directly with the <b>CTO</b> to translate complex procurement data into BI solutions using Python, PostgreSQL, REST APIs, Docker, and Git.</li>
+      </ul>
+      <div class="exp-foot">
+        <div>
+          <div class="label">Tools Used</div>
+          <div class="tool-row">
+            <span class="tool"><img class="tool-ic" src="icons/tools/python.svg" alt="Python" loading="lazy" onerror="logoFallback(this,'Py')">Python</span>
+            <span class="tool"><img class="tool-ic" src="icons/tools/postgresql.svg" alt="PostgreSQL" loading="lazy" onerror="logoFallback(this,'Pg')">PostgreSQL</span>
+            <span class="tool"><span class="tool-ic-fb">API</span>REST APIs</span>
+            <span class="tool"><img class="tool-ic" src="icons/tools/docker.svg" alt="Docker" loading="lazy" onerror="logoFallback(this,'Dk')">Docker</span>
+            <span class="tool"><img class="tool-ic" src="icons/tools/git.svg" alt="Git" loading="lazy" onerror="logoFallback(this,'Git')">Git</span>
+          </div>
+        </div>
+        <div>
+          <div class="label">Core Capabilities</div>
+          <div class="cap-list">
+            <span class="cap">ETL Pipelines</span>
+            <span class="cap">Data Modeling</span>
+            <span class="cap">Dashboard Development</span>
+            <span class="cap">Data Quality Testing</span>
+            <span class="cap">Executive Reporting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card fade-up">
+      <div class="exp-head">
+        <div class="exp-head-left">
+          <div class="exp-logo has-img"><img src="images/experience/shri-aadinath-exports-logo.webp" alt="Shri Aadinath Exports logo" width="150" height="150" loading="lazy"></div>
+          <div>
+            <div class="exp-role">Business Strategy &amp; Automation Intern</div>
+            <div class="exp-company"><b>Shri Aadinath Exports</b> · Mumbai, India</div>
+          </div>
+        </div>
+        <div class="exp-dates">May 2025 – Jul 2025</div>
+      </div>
+      <ul class="exp-bullets">
+        <li>Prioritized <b>10 operational inefficiencies</b> across <b>5 departments</b> via root-cause analysis, then designed <b>7 low-code automations</b> (Make.com, Airtable) that cut manual workload and reduced order errors.</li>
+        <li>Analyzed approval-bottleneck patterns and implemented <b>Slack-based escalation workflows</b>, improving cross-team response time and throughput.</li>
+        <li>Defined product requirements for a barcode-based inventory system targeting <b>95%+ stock accuracy</b>, and presented the automation strategy to company leadership.</li>
+      </ul>
+      <div class="exp-foot">
+        <div>
+          <div class="label">Tools Used</div>
+          <div class="tool-row">
+            <span class="tool"><img class="tool-ic" src="icons/tools/make.svg" alt="Make" loading="lazy" onerror="logoFallback(this,'Mk')">Make.com</span>
+            <span class="tool"><img class="tool-ic" src="icons/tools/airtable.svg" alt="Airtable" loading="lazy" onerror="logoFallback(this,'At')">Airtable</span>
+            <span class="tool"><img class="tool-ic" src="icons/tools/slack.svg" alt="Slack" loading="lazy" onerror="logoFallback(this,'Sl')">Slack</span>
+          </div>
+        </div>
+        <div>
+          <div class="label">Core Capabilities</div>
+          <div class="cap-list">
+            <span class="cap">Root-Cause Analysis</span>
+            <span class="cap">Process Automation</span>
+            <span class="cap">Requirements Gathering</span>
+            <span class="cap">Process Improvement</span>
+            <span class="cap">Stakeholder Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Featured Projects</div>
+      <h2>Selected work</h2>
+      <p class="lead">Eight projects across analytics, product, and AI — each with the tools I used, the capabilities involved, and the business impact it created.</p>
+    </div>
+
+    <!-- Filter / category navigation -->
+    <div class="proj-filter fade-up" role="tablist" aria-label="Filter projects by domain">
+      <button class="pf-btn active" role="tab" aria-selected="true" data-filter="all">All Projects <span class="pf-count">8</span></button>
+      <button class="pf-btn" role="tab" aria-selected="false" data-filter="analytics">Analytics &amp; BI <span class="pf-count">4</span></button>
+      <button class="pf-btn" role="tab" aria-selected="false" data-filter="product">Product Management <span class="pf-count">2</span></button>
+      <button class="pf-btn" role="tab" aria-selected="false" data-filter="ai">AI Systems <span class="pf-count">2</span></button>
+    </div>
+
+    <!-- Active skill filter (set when a Technical Skill is clicked) -->
+    <div class="skill-filter-note" id="skill-filter-note" role="status" aria-live="polite">
+      <svg class="sf-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+      <span>Showing projects using <b id="skill-filter-name"></b></span>
+      <button class="skill-filter-clear" id="skill-filter-clear" type="button" aria-label="Clear skill filter and show all projects">Clear skill filter
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Projects rendered from data (see PROJECTS_DATA in script) -->
+    <div id="projects-root"></div>
+  </div>
+</section>
+
+<!-- ================= RECOGNITION ================= -->
+<section id="recognition" class="tight">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Honors &amp; Awards</div>
+      <h2>Recognition</h2>
+    </div>
+    <div class="honors-row">
+      <div class="honor-card fade-up">
+        <div class="honor-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg></div>
+        <h4>3× Dean's List</h4>
+        <p>Fall 2024, Spring 2025, Fall 2025 — awarded for staying in the top 10% of the business school.</p>
+      </div>
+      <div class="honor-card fade-up">
+        <div class="honor-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4a8 8 0 0 1-16 0V4z"/><path d="M12 16v4M8 22h8"/><path d="M4 6H2v2a4 4 0 0 0 4 4M20 6h2v2a4 4 0 0 1-4 4"/></svg></div>
+        <h4>Academic Excellence Scholar</h4>
+        <p>Merit scholarship for sustained academic performance.</p>
+      </div>
+      <div class="honor-card fade-up">
+        <div class="honor-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M8 13.5 6 21l6-3 6 3-2-7.5"/></svg></div>
+        <h4>3× Hackathon Winner</h4>
+        <p>FINHACK 2026, Celonis Process Mining Hackathon &amp; Tech Tank 2025.</p>
+      </div>
+      <div class="honor-card fade-up">
+        <div class="honor-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h4>Google Case Competition Finalist</h4>
+        <p>Finalist — Google Business Analytics Case Competition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEADERSHIP ================= -->
+<section id="leadership" class="tight">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">Leadership &amp; Organizations</div>
+      <h2>Where I show up</h2>
+    </div>
+
+    <div class="lead-hero fade-up">
+      <div class="lead-hero-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7L12 2z"/></svg></div>
+      <div class="lead-hero-txt">
+        <span class="tagpill">Signature Achievement</span>
+        <h3>Rising Star Award Winner — 2026</h3>
+        <p>Awarded at the UTD Student Leadership Event, recognizing the freshman or sophomore with exceptional leadership and involvement on campus.</p>
+      </div>
+    </div>
+
+    <div class="lead-group fade-up">
+      <div class="lead-subhead">Leadership Roles</div>
+      <div class="leadership-grid">
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/leadership/indian-students-association-logo.webp" alt="Indian Students Association (ISA) logo" width="300" height="300" loading="lazy"></div>
+          <div><h4>SOC Officer</h4><p>Indian Students Association (ISA)</p></div>
+        </div>
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/leadership/freshman-mentor-program-logo.webp" alt="Freshman Mentor Program logo" width="150" height="150" loading="lazy"></div>
+          <div><h4>Mentor</h4><p>Freshman Mentor Program</p></div>
+        </div>
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/leadership/university-housing-logo.webp" alt="UT Dallas University Housing logo" width="200" height="200" loading="lazy"></div>
+          <div><h4>Peer Advisor</h4><p>University Housing</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lead-group fade-up">
+      <div class="lead-subhead">Organizations</div>
+      <div class="leadership-grid">
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/organisations/artificial-intelligence-society-logo.webp" alt="Artificial Intelligence Society logo" width="214" height="96" loading="lazy"></div>
+          <div><h4>Artificial Intelligence Society</h4><p>UT Dallas</p></div>
+        </div>
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/organisations/product-at-dallas-logo.webp" alt="Product@Dallas logo" width="150" height="150" loading="lazy"></div>
+          <div><h4>Product@Dallas</h4><p>Product Management Community</p></div>
+        </div>
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/organisations/jsom-deans-council-logo.webp" alt="JSOM Undergraduate Dean's Council logo" width="200" height="200" loading="lazy"></div>
+          <div><h4>JSOM Undergraduate Dean's Council</h4><p>UT Dallas</p></div>
+        </div>
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/organisations/alias-logo.webp" alt="ALIAS logo" width="150" height="150" loading="lazy"></div>
+          <div><h4>ALIAS</h4><p>AI Leadership &amp; Integrated Analytics Scholars</p></div>
+        </div>
+        <div class="leadership-card fade-up">
+          <div class="leadership-logo has-img"><img src="images/organisations/consulting-leadership-development-society-logo.webp" alt="Consulting &amp; Leadership Development Society logo" width="150" height="150" loading="lazy"></div>
+          <div><h4>Consulting &amp; Leadership Development Society</h4><p>UT Dallas</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="eyebrow fade-up">Let's Connect</div>
+    <h2 class="fade-up">Looking for <span>Internship Opportunities</span></h2>
+    <p class="sub fade-up">Data Analytics · Business Intelligence · Analytics Engineering · Product Management</p>
+    <div class="contact-icons fade-up">
+      <a href="mailto:dhruvsurana223@gmail.com" class="icon-btn" aria-label="Email Dhruv Surana" title="dhruvsurana223@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/dhruvsurana" class="icon-btn" aria-label="LinkedIn profile" title="LinkedIn — linkedin.com/in/dhruvsurana" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5 5 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/dhruvsurana" class="icon-btn" aria-label="GitHub profile" title="GitHub — github.com/dhruvsurana" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      </a>
+      <a href="tel:+14693470376" class="icon-btn" aria-label="Call Dhruv Surana" title="+1 469 347 0376">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Dhruv Surana. All rights reserved.
+</footer>
+
+<script>
+  // Logo fallback: replace broken brand logos with an elegant monogram badge
+  function logoFallback(img, txt){
+    const s = document.createElement('span');
+    s.className = 'tool-ic-fb';
+    s.textContent = txt;
+    img.replaceWith(s);
+  }
+
+  /* ============================================================
+     PROJECTS — data-driven rendering
+     Edit PROJECTS_DATA below to add/update projects. Logos live in
+     /icons/tools/ ; hero images in /images/projects/.
+  ============================================================ */
+  (function(){
+    const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    const mono = s => s.replace(/[^A-Za-z0-9 ]/g,'').split(/\s+/).map(w=>w[0]).join('').slice(0,3).toUpperCase();
+
+    // Generic (non-brand) tool glyphs — tasteful fallbacks, gold-tinted
+    const G = (p)=>`<svg class="tool-ic" viewBox="0 0 24 24" fill="none" stroke="#D9B45C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+    const ICON = {
+      db:      G('<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>'),
+      ml:      G('<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>'),
+      nlp:     G('<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M7 9h10M7 13h6"/>'),
+      sensor:  G('<circle cx="12" cy="12" r="2"/><path d="M4.9 4.9a10 10 0 0 0 0 14.2M19.1 4.9a10 10 0 0 1 0 14.2M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4"/>'),
+      spark:   G('<path d="M12 3l1.9 4.6L18.5 9.5 13.9 11.4 12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 15l.7 1.8L21.5 17.5 19.7 18.2 19 20l-.7-1.8L16.5 17.5l1.8-.7z"/>'),
+      arch:    G('<path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 12l10 5 10-5M2 17l10 5 10-5"/>'),
+      doc:     G('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/>'),
+      process: G('<rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M9 6h6a2 2 0 0 1 2 2v7"/>'),
+      phone:   G('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/>'),
+      form:    G('<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><path d="M9 12h6M9 16h6"/>'),
+      audio:   G('<path d="M3 12h2l2-7 4 18 3-11 2 4h5"/>'),
+    };
+
+    /* ============================================================
+       CENTRAL TOOL REGISTRY (single source of truth)
+       - Each tool has a canonical id, display name and an icon
+         (local brand svg in /icons/tools/ OR a generic glyph).
+       - `learning:true`  → shows the ★ "actively learning" marker.
+       - `skill:false`    → shown on project cards but excluded from
+                            the Technical Skills section (concept / not software).
+       Project tools + Technical Skills both resolve through this registry,
+       so the two stay automatically in sync.
+    ============================================================ */
+    const TOOLS = {
+      // Languages & data
+      python:{name:'Python', logo:'python'},
+      sql:{name:'SQL', glyph:'db'},
+      r:{name:'R', logo:'r'},
+      java:{name:'Java', logo:'openjdk'},
+      postgresql:{name:'PostgreSQL', logo:'postgresql'},
+      bigquery:{name:'BigQuery', logo:'googlebigquery'},
+      bigqueryml:{name:'BigQuery ML', logo:'googlebigquery'},
+      snowflake:{name:'Snowflake', logo:'snowflake', learning:true},
+      pandas:{name:'Pandas', logo:'pandas'},
+      numpy:{name:'NumPy', logo:'numpy'},
+      scikitlearn:{name:'Scikit-Learn', logo:'scikitlearn'},
+      xgboost:{name:'XGBoost', glyph:'ml'},
+      // Analytics & BI
+      tableau:{name:'Tableau', logo:'tableau'},
+      powerbi:{name:'Power BI', logo:'powerbi', learning:true},
+      looker:{name:'Looker Studio', logo:'looker'},
+      excel:{name:'Microsoft Excel', logo:'microsoftexcel'},
+      celonis:{name:'Celonis Process Mining', glyph:'process'},
+      // Engineering & cloud
+      googlecloud:{name:'Google Cloud', logo:'googlecloud'},
+      aws:{name:'AWS', logo:'amazonwebservices', learning:true},
+      docker:{name:'Docker', logo:'docker'},
+      dbt:{name:'dbt', glyph:'process', learning:true},
+      airflow:{name:'Apache Airflow', logo:'apacheairflow', learning:true},
+      databricks:{name:'Databricks', logo:'databricks', learning:true},
+      git:{name:'Git', logo:'git'},
+      github:{name:'GitHub', logo:'github'},
+      fastapi:{name:'FastAPI', logo:'fastapi'},
+      nextjs:{name:'Next.js', logo:'nextdotjs'},
+      typescript:{name:'TypeScript', logo:'typescript'},
+      // Product & design
+      figma:{name:'Figma', logo:'figma'},
+      notion:{name:'Notion', logo:'notion'},
+      jira:{name:'Jira', logo:'jira', learning:true},
+      canva:{name:'Canva', logo:'canva'},
+      // AI & automation
+      openai:{name:'OpenAI API', logo:'openai'},
+      claude:{name:'Claude API', logo:'claude'},
+      make:{name:'Make.com', logo:'make'},
+      airtable:{name:'Airtable', logo:'airtable'},
+      lovable:{name:'Lovable', logo:'lovable'},
+      vapi:{name:'Vapi', glyph:'phone'},
+      twilio:{name:'Twilio', logo:'twilio'},
+      pandadoc:{name:'PandaDoc', logo:'pandadoc'},
+      calendly:{name:'Calendly', logo:'calendly'},
+      slack:{name:'Slack', logo:'slack'},
+      tally:{name:'Tally', glyph:'form'},
+      murf:{name:'Murf AI', glyph:'audio'},
+      gmail:{name:'Gmail', logo:'gmail'},
+      // Shown on cards but NOT counted as technical skills (concepts / hardware / docs)
+      googleslides:{name:'Google Slides', logo:'googleslides', skill:false},
+      verizon5g:{name:'Verizon 5G', logo:'verizon', skill:false},
+      iot:{name:'IoT Crowd Sensors', glyph:'sensor', skill:false},
+      nlp:{name:'NLP', glyph:'nlp', skill:false},
+      prompteng:{name:'AI Prompt Engineering', glyph:'spark', skill:false},
+      sysarch:{name:'System Architecture', glyph:'arch', skill:false},
+      prd:{name:'PRD', glyph:'doc', skill:false}
+    };
+
+    // Alias table: any label found in project data / skills resolves to one canonical id
+    const ALIASES = {
+      'python':'python','sql':'sql','r':'r','java':'java',
+      'postgresql':'postgresql','postgres':'postgresql',
+      'bigquery':'bigquery','google bigquery':'bigquery','bigquery ml':'bigqueryml',
+      'snowflake':'snowflake','pandas':'pandas','numpy':'numpy',
+      'scikit-learn':'scikitlearn','scikit learn':'scikitlearn','sklearn':'scikitlearn','scikit-learn (pca)':'scikitlearn',
+      'xgboost':'xgboost','tableau':'tableau',
+      'power bi':'powerbi','powerbi':'powerbi',
+      'looker':'looker','looker studio':'looker',
+      'excel':'excel','microsoft excel':'excel','spreadsheet applications (excel)':'excel',
+      'celonis':'celonis','celonis process mining':'celonis',
+      'google cloud':'googlecloud','gcp':'googlecloud',
+      'aws':'aws','amazon web services':'aws',
+      'docker':'docker','dbt':'dbt','apache airflow':'airflow','airflow':'airflow','databricks':'databricks',
+      'git':'git','github':'github','git & github':'git',
+      'fastapi':'fastapi','next.js':'nextjs','nextjs':'nextjs','typescript':'typescript',
+      'figma':'figma','notion':'notion','jira':'jira','canva':'canva',
+      'openai':'openai','openai api':'openai','chatgpt':'openai','chatgpt (openai)':'openai',
+      'claude':'claude','claude api':'claude',
+      'make':'make','make.com':'make','airtable':'airtable','lovable':'lovable',
+      'vapi':'vapi','twilio':'twilio','pandadoc':'pandadoc','calendly':'calendly','slack':'slack',
+      'tally':'tally','murf ai':'murf','murf':'murf','gmail':'gmail',
+      'google slides':'googleslides','verizon 5g':'verizon5g','iot crowd sensors':'iot',
+      'nlp':'nlp','ai prompt engineering':'prompteng','system architecture':'sysarch','prd':'prd'
+    };
+    function toolId(name){
+      return ALIASES[String(name).toLowerCase().trim().replace(/\s+/g,' ')] || null;
+    }
+    function iconFor(id, name){
+      const t = id && TOOLS[id];
+      if(t && t.logo)  return `<img class="tool-ic" src="icons/tools/${t.logo}.svg" alt="" loading="lazy" onerror="logoFallback(this,'${mono(name)}')">`;
+      if(t && t.glyph) return ICON[t.glyph];
+      return `<span class="tool-ic-fb">${mono(name)}</span>`;
+    }
+    // Static chip for project cards (display only)
+    function toolChip(name){
+      const id = toolId(name);
+      return `<span class="tool" title="${esc(name)}">${iconFor(id,name)}${esc(name)}</span>`;
+    }
+
+    // Link / action icons (inherit button text colour)
+    const K = (p)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+    function kindIcon(kind){
+      switch(kind){
+        case 'github':    return K('<path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>');
+        case 'video':     return K('<circle cx="12" cy="12" r="9"/><path d="M10 9l5 3-5 3V9z"/>');
+        case 'live':      return K('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/>');
+        case 'dashboard': return K('<path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/>');
+        case 'deck':      return K('<rect x="2" y="3" width="20" height="13" rx="1"/><path d="M12 16v5M8 21h8"/>');
+        case 'figma':     return K('<rect x="4" y="3" width="7" height="6"/><rect x="13" y="3" width="7" height="6"/><rect x="4" y="12" width="7" height="9"/><circle cx="16.5" cy="15.5" r="3.5"/>');
+        default:          return K('<path d="M7 17 17 7M8 7h9v9"/>');
+      }
+    }
+    const EXT = '<svg class="ext-ic" style="width:13px;height:13px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+    const CHEV = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+    const CHEV_D = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+    const TROPHY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>';
+
+    function linkBtn(l, cls){
+      if(l.disabled){
+        return `<span class="btn ${cls} btn-sm btn-disabled" role="button" aria-disabled="true" title="Coming soon">${kindIcon(l.kind)}${esc(l.label)}<span class="soon">SOON</span></span>`;
+      }
+      return `<a class="btn ${cls} btn-sm" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(l.label)} — opens in new tab">${kindIcon(l.kind)}${esc(l.label)}${EXT}</a>`;
+    }
+    function dropdown(d){
+      const items = d.items.map(it=>`<a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${kindIcon('deck')}${esc(it.label)}${EXT}</a>`).join('');
+      return `<div class="pdrop"><button class="btn btn-ghost btn-sm pdrop-btn" aria-haspopup="true" aria-expanded="false">${kindIcon('deck')}${esc(d.label)}${CHEV_D}</button><div class="pdrop-menu" role="menu">${items}</div></div>`;
+    }
+
+    // Per-project media layout → sensible aspect handling (landscape/dashboard/workflow/portrait)
+    const LAYOUT_BY_ID = { verizon:'landscape', nutritrack:'landscape', dhruvai:'workflow' };
+    function card(p){
+      const layout = LAYOUT_BY_ID[p.id] || (p.image ? 'dashboard' : 'placeholder');
+      // Hero image only — badge now lives BELOW the image, above the title
+      const media = p.image
+        ? `<div class="pcard-media" data-layout="${layout}"><img src="images/projects/${p.image}" alt="${esc(p.imageAlt)}" loading="lazy" decoding="async"></div>`
+        : `<div class="pcard-media" data-layout="placeholder"><div class="pcard-ph"><span>${esc(p.imagePlaceholder||'Dashboard image coming soon')}</span></div></div>`;
+      const award = p.badge ? `<div class="pcard-award">${TROPHY}<span><b>${esc(p.badge.place)}</b> · ${esc(p.badge.event)}</span></div>` : '';
+      const tools = p.tools.map(toolChip).join('');
+      const toolIds = p.tools.map(toolId).filter(Boolean).join(' ');
+      const caps  = p.capabilities.map(c=>`<span class="cap">${esc(c)}</span>`).join('');
+      let actions = linkBtn(p.primary,'btn-primary');
+      if(p.secondary) actions += linkBtn(p.secondary,'btn-ghost');
+      if(p.dropdown)  actions += dropdown(p.dropdown);
+      const detId = 'details-'+p.id;
+      return `
+      <article class="pcard fade-up" data-domain="${p.domain}" data-tools="${toolIds}">
+        ${media}
+        <div class="pcard-body">
+          ${award}
+          <h4 class="pcard-title" id="title-${p.id}">${esc(p.title)}</h4>
+          <p class="pcard-desc clamp" id="desc-${p.id}">${p.desc}</p>
+          <button class="readmore-btn" aria-expanded="false" aria-controls="desc-${p.id}">Read more ${CHEV}</button>
+          <div class="pcard-sub">Tools</div>
+          <div class="pcard-tools">${tools}</div>
+          <div class="pcard-actions">${actions}</div>
+          <div class="pcard-details">
+            <button class="details-toggle" aria-expanded="false" aria-controls="${detId}">View Skills &amp; Capabilities ${CHEV_D}</button>
+            <div class="details-panel"><div class="details-clip"><div class="details-inner" id="${detId}">
+              <div class="label">${esc(p.capabilitiesHeading)}</div>
+              <div class="cap-list">${caps}</div>
+            </div></div></div>
+          </div>
+        </div>
+      </article>`;
+    }
+
+    function domainGroup(d){
+      const n = d.projects.length;
+      return `<div class="domain-group" data-domain="${d.id}">
+        <div class="domain-head fade-up">
+          <div class="domain-head-ic">${d.icon}</div>
+          <div>
+            <h3>${esc(d.title)} <span class="dcount">${n} project${n>1?'s':''}</span></h3>
+            <p>${esc(d.subtitle)}</p>
+          </div>
+        </div>
+        <div class="proj-grid" data-stagger>${d.projects.map(card).join('')}</div>
+      </div>`;
+    }
+
+    /* ---------------- PROJECT DATA (source of truth) ---------------- */
+    const PROJECTS_DATA = [
+      {
+        id:'gov', domain:'analytics',
+        title:'Government Procurement Analytics Platform',
+        badge:null,
+        image:null, imagePlaceholder:'Executive dashboard preview — coming soon',
+        imageAlt:'Government procurement analytics executive dashboard preview',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Government agencies generate vast amounts of procurement and funding data, but extracting actionable insights from fragmented public datasets is often slow and manual. To address this, I built an end-to-end government procurement analytics platform processing <strong>2,500+ federal contract and assistance awards</strong> across <strong>4 California counties</strong>. I engineered <strong>Python ETL pipelines</strong> to integrate USAspending data into <strong>PostgreSQL</strong>, designed scalable data models, and developed <strong>8 executive dashboards</strong> delivering insights into procurement trends, vendor concentration, agency performance, funding utilisation, and payment analytics—enabling faster, data-driven decision making.`,
+        tools:['Python','PostgreSQL','SQL','Tableau','Docker','Git'],
+        capabilities:['ETL / ELT','Data Modelling','Dashboard Development','Business Intelligence','Data Engineering','Executive Reporting','Data Quality Testing'],
+        primary:{label:'Interactive Dashboard', kind:'dashboard', disabled:true},
+        secondary:{label:'View Source Code', kind:'github', url:'https://github.com/dhruvsurana/Government-Procurement-Analytics-Platform'}
+      },
+      {
+        id:'retainiq', domain:'analytics',
+        title:'RetainIQ — AI-Powered Customer Retention Platform',
+        badge:{place:'Top 8 Finalist', event:'Google Business Analytics Case Competition'},
+        image:'retainiq-dashboard.webp',
+        imageAlt:'RetainIQ customer retention dashboard showing customer tiers, health scores and revenue risk',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Built for the Google Business Analytics Case Competition, RetainIQ is a business analytics platform that helps customer success teams identify at-risk customers and reduce revenue loss through predictive analytics and AI-powered recommendations. By analysing customer behaviour and financial data, our team discovered that the Professional tier accounted for nearly <strong>78% of lost revenue</strong>, enabling more targeted and impactful retention strategies.`,
+        tools:['Next.js','TypeScript','BigQuery','BigQuery ML','SQL','Claude API','Google Cloud'],
+        capabilities:['Business Analytics','Customer Segmentation','Churn Prediction','Customer Health Scoring','Revenue Risk Analysis','Dashboard Development','AI Workflow Automation'],
+        primary:{label:'Interactive Dashboard', kind:'dashboard', url:'https://retainiq-951046328836.us-central1.run.app/dashboard'},
+        dropdown:{label:'Presentations', items:[
+          {label:'Round 1 Presentation', url:'https://canva.link/haugo2g116ggi8m'},
+          {label:'Round 2 Presentation', url:'https://gamma.app/docs/Retain-IQ-Amplify-CRM-6hoiofwoi93y5f9'}
+        ]}
+      },
+      {
+        id:'supplynet', domain:'analytics',
+        title:'SupplyNet — Economic Weather Forecast for Supply Chains',
+        badge:{place:'3rd Place Winner', event:'FINHACK 2026'},
+        image:'supplynet-dashboard.webp',
+        imageAlt:'SupplyNet supply-chain risk dashboard with live news map and crisis briefing panel',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Built for the FINHACK 2026 competition, SupplyNet is an advanced predictive analytics platform that functions as an “economic weather forecast” for global supply chains, reducing disruption forecasting time from reactive response to a <strong>3–6 month predictive window</strong>. The system engineered <strong>50+ economic and market features</strong>, applied PCA to compress complexity into a unified GSSI index, and trained an <strong>XGBoost model</strong> to forecast supply chain stress. It also features an NLP pipeline that converts real-time global news into actionable market sentiment.`,
+        tools:['Python','Pandas','NumPy','Scikit-Learn','XGBoost','NLP','Git','GitHub'],
+        capabilities:['Data Analysis','Statistical Analysis & Modeling','Machine Learning (XGBoost / PCA)','ETL / Data Transformation','Predictive Forecasting','Process Improvement'],
+        primary:{label:'View Presentation', kind:'deck', url:'https://cometmail-my.sharepoint.com/:p:/g/personal/dxs230109_utdallas_edu/IQDnSEa_YQ-2QJFZVICDYp-1AV1Rqc9BcPzHDavSqFZJOHU?e=KQWIfi'},
+        secondary:{label:'View Source Code', kind:'github', url:'https://github.com/dhruvsurana/supplynet-gssi-case-study'}
+      },
+      {
+        id:'celonis', domain:'analytics',
+        title:'Celonis Process Mining Hackathon — Optimizing Order Management & Revenue Flow',
+        badge:{place:'1st Place Winner', event:'JSOM AI Day Hackathon'},
+        image:'celonis-process-mining.webp',
+        imageAlt:'Celonis process-mining dashboard showing order management KPIs and revenue flow',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Built during UT Dallas’ first-ever AI Day for the Celonis Process Mining Hackathon, this winning consulting solution reduced order cycle times by <strong>35%</strong> and eliminated operational bottlenecks by redesigning a global company’s Order Management process under strict time constraints. The project uncovered critical revenue leakages, throughput delays, and rework loops from real-world operational data. To solve these issues, the team engineered an <strong>Invoice-First / Delivery-Next framework</strong>, an AI-driven annotation and real-time monitoring alert system, and a strategic pilot rollout plan to drive sustainable business impact.`,
+        tools:['Celonis','Tableau','SQL'],
+        capabilities:['Process Mining','Business Analysis','Process Improvement & Workflow Redesign','KPI Reporting & Revenue Risk Analysis','Data Visualization','Consulting & Solution Design','Stakeholder Communication'],
+        primary:{label:'View Presentation', kind:'deck', url:'https://www.canva.com/design/DAG3G9nH3yM/FO2Izjk8r1aWSvf6rp-kCg/view?utm_content=DAG3G9nH3yM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf2ed0a4551#1'}
+      },
+      {
+        id:'nutritrack', domain:'product',
+        title:'NutriTrack — AI-Powered Student Nutrition Platform',
+        badge:null,
+        image:'nutritrack-prototype.webp',
+        imageAlt:'NutriTrack mobile app prototype screens for student nutrition tracking',
+        capabilitiesHeading:'Product Management Skills',
+        desc:`Maintaining a healthy diet is a common challenge for college students due to limited nutrition knowledge, busy schedules, and tight budgets. Developed as part of Product@Dallas, NutriTrack is a product management project where our team applied <strong>Product Discovery, User Research, Competitive Analysis, Persona Development, User Journey Mapping, Feature Prioritization, and Product Strategy</strong> to design an AI-powered nutrition platform tailored to the student lifestyle. We translated these insights into a high-fidelity <strong>Figma prototype</strong>, supported by a comprehensive Product Requirements Document (PRD), validation framework, KPI strategy, and product roadmap to demonstrate a complete end-to-end product development process.`,
+        tools:['Figma','PRD','Google Slides'],
+        capabilities:['Product Discovery','User Research','Competitive Analysis','Product Strategy','Persona Development','User Journey Mapping','MVP Prioritization','Wireframing & Prototyping','KPI Definition','Product Validation','Product Roadmapping'],
+        primary:{label:'Figma Prototype', kind:'figma', url:'https://window-bead-40068360.figma.site/'},
+        secondary:{label:'View Product Deck', kind:'deck', url:'https://docs.google.com/presentation/d/1z9ewVf_GOT36LJfV2hNyIs2UKTZ-90UJo1ZqWF0NXBk/edit?usp=sharing'}
+      },
+      {
+        id:'verizon', domain:'product',
+        title:'Verizon Smart Campus Transit System — Optimizing UTD 883 Bus Routes with 5G & IoT',
+        badge:{place:'Top 15 Finalist', event:'Verizon Smart Campus Competition'},
+        image:'verizon-smart-transit.webp',
+        imageAlt:'Verizon Smart Transit System title slide powered by Verizon 5G, IoT and AI',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Developed for the Verizon Smart Campus Competition, the Verizon Smart Campus Transit System is an end-to-end product strategy and IoT solution addressing the major student commute problem at UTD by reducing wait times and overcrowding by <strong>over 30%</strong>. The project focused on user journey mapping, problem discovery, and translating real-world student pain points into a viable technical framework. By leveraging <strong>Verizon’s 5G network infrastructure</strong> and real-time IoT crowd sensors, the system tracks live bus capacities, streamlines route predictability, and minimizes transit delays. The initiative was pitched directly to executive judges under strict time constraints, highlighting strong business acumen and stakeholder communication.`,
+        tools:['Python','Pandas','Excel','Canva','IoT Crowd Sensors','Verizon 5G'],
+        capabilities:['Product Thinking','Business Analysis','Stakeholder Communication','Process Improvement','Requirements Gathering','User Journey Mapping'],
+        primary:{label:'Watch Solution Walkthrough', kind:'video', url:'https://youtu.be/SYFwnuyxePk?feature=shared'},
+        secondary:{label:'View Presentation', kind:'deck', url:'https://gamma.app/docs/Smart-Transit-System-for-UTD-883-Bus-Routes-8ylprykx9qkmixm'}
+      },
+      {
+        id:'tradova', domain:'ai',
+        title:'Tradova — AI-Powered Sales Follow-Up Platform',
+        badge:null,
+        image:'tradova-platform.webp',
+        imageAlt:'Tradova AI sales follow-up platform dashboard with a prioritized follow-up queue',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Sales teams often lose high-value opportunities due to delayed follow-ups, scattered customer information, and inefficient manual workflows. To solve this, I designed Tradova, an AI-powered sales intelligence platform that combines AI-driven lead prioritization, intelligent workflow automation, and personalized follow-up recommendations to help sales teams take the right action at the right time. By transforming traditional CRM pipelines into an intelligent action engine, Tradova is designed to reduce follow-up cycles from <strong>3–7 days to just 3–5 hours</strong> while improving sales team productivity by an estimated <strong>70%</strong> through automated prioritization and AI-assisted decision making.`,
+        tools:['Lovable','FastAPI','OpenAI API','PostgreSQL','AI Prompt Engineering','System Architecture'],
+        capabilities:['AI Workflow Automation','AI-Powered Lead Prioritization','Prompt Engineering','Intelligent Decision Support','Business Process Automation','Sales Intelligence','Workflow Orchestration','System Architecture','CRM Workflow Optimization','AI Solution Design'],
+        primary:{label:'Explore Live Platform', kind:'live', url:'https://tradova.lovable.app/'},
+        secondary:{label:'View Pitch Deck', kind:'deck', url:'https://cometmail-my.sharepoint.com/:p:/g/personal/dxs230109_utdallas_edu/IQAJi4boAz5ZSYvtlu98jx2ZAS5aQ6rutbd6X6FVCZme4ck?e=A6Mpj6'}
+      },
+      {
+        id:'dhruvai', domain:'ai',
+        title:'Dhruv AI — Fully AI-Powered Lead Generation System',
+        badge:null,
+        image:'dhruv-ai-workflow.webp',
+        imageAlt:'Dhruv AI automated lead-generation workflow diagram built in Make.com',
+        capabilitiesHeading:'Core Capabilities',
+        desc:`Built as a personal project to explore AI tools, Dhruv AI is an end-to-end automated system that reduces lead generation time from <strong>days to just hours</strong>. The workflow captures leads via Tally, qualifies budgets ($10K+) in Airtable, personalizes outreach with ChatGPT, and engages prospects via Vapi AI voice agents. It seamlessly auto-generates proposals through PandaDoc and orchestrates the entire pipeline using Make.com.`,
+        tools:['Airtable','Make.com','ChatGPT','Tally','Vapi','Twilio','PandaDoc','Calendly','Gmail','Slack','Murf AI'],
+        capabilities:['Lead Capture & Ingestion','Smart Budget Qualification (> $10K+)','AI Prospect Research & Personalization','Autonomous Voice Agent Calls (Vapi + Twilio)','Automated Proposal Generation (PandaDoc)','Smart Scheduling & Fallbacks (Calendly)','Real-time Sales Notifications (Slack)','Workflow Orchestration (Make.com)'],
+        primary:{label:'Watch Automation Walkthrough Video', kind:'video', url:'https://www.youtube.com/watch?v=88r4U9-T8IA'}
+      }
+    ];
+
+    const DOMAINS = [
+      { id:'analytics', title:'Analytics & Business Intelligence',
+        subtitle:'Transforming complex data into actionable business insights through analytics, dashboards, and decision support systems.',
+        icon:'<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>',
+        projects:PROJECTS_DATA.filter(p=>p.domain==='analytics') },
+      { id:'product', title:'Product Management & Strategy',
+        subtitle:'Designing user-centric products from problem discovery and market research to MVP strategy and execution.',
+        icon:'<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2 0-2.8a2 2 0 0 0-3 0zM12 15l-3-3a12 12 0 0 1 7-9c2.4 0 4 1.6 4 4a12 12 0 0 1-9 7zM9 12H4s.5-2.8 2-4 4-1 4-1M12 15v5s2.8-.5 4-2 1-4 1-4"/></svg>',
+        projects:PROJECTS_DATA.filter(p=>p.domain==='product') },
+      { id:'ai', title:'AI Systems & Automation',
+        subtitle:'Building intelligent AI-powered systems that automate business processes, streamline operations, and deliver scalable business value.',
+        icon:'<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="2"/><path d="M12 7V4M8 3h8M9 13h.01M15 13h.01M9 16h6M2 11v4M22 11v4"/></svg>',
+        projects:PROJECTS_DATA.filter(p=>p.domain==='ai') }
+    ];
+
+    // Render
+    const root = document.getElementById('projects-root');
+    if(root){
+      root.innerHTML = DOMAINS.map(domainGroup).join('');
+
+      // Hide "Read more" where the description isn't actually clamped
+      requestAnimationFrame(()=>{
+        root.querySelectorAll('.pcard-desc').forEach(desc=>{
+          const btn = desc.parentElement.querySelector('.readmore-btn');
+          if(btn && desc.scrollHeight <= desc.clientHeight + 2) btn.style.display='none';
+        });
+      });
+
+      // Interactions (event delegation)
+      root.addEventListener('click', e=>{
+        const rm = e.target.closest('.readmore-btn');
+        if(rm){
+          const desc = rm.parentElement.querySelector('.pcard-desc');
+          const expanded = desc.classList.toggle('clamp')===false;
+          rm.classList.toggle('open', expanded);
+          rm.setAttribute('aria-expanded', String(expanded));
+          rm.firstChild.textContent = expanded ? 'Show less ' : 'Read more ';
+          return;
+        }
+        const dt = e.target.closest('.details-toggle');
+        if(dt){
+          const wrap = dt.closest('.pcard-details');
+          const open = wrap.classList.toggle('open');
+          dt.setAttribute('aria-expanded', String(open));
+          dt.firstChild.textContent = open ? 'Hide Skills & Capabilities ' : 'View Skills & Capabilities ';
+          return;
+        }
+        const pb = e.target.closest('.pdrop-btn');
+        if(pb){
+          const dd = pb.closest('.pdrop');
+          const open = dd.classList.toggle('open');
+          pb.setAttribute('aria-expanded', String(open));
+          e.stopPropagation();
+          return;
+        }
+      });
+      document.addEventListener('click', e=>{
+        if(!e.target.closest('.pdrop')){
+          document.querySelectorAll('.pdrop.open').forEach(d=>{
+            d.classList.remove('open');
+            const b=d.querySelector('.pdrop-btn'); if(b) b.setAttribute('aria-expanded','false');
+          });
+        }
+      });
+    }
+
+    /* ============================================================
+       TECHNICAL SKILLS — rendered from the same tool registry.
+       Manually-curated tools + every technical tool detected in
+       PROJECTS_DATA are merged, de-duplicated and grouped here.
+    ============================================================ */
+    const IC_CODE    = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>';
+    const IC_CHART   = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>';
+    const IC_DB      = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>';
+    const IC_PRODUCT = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20v14H2z"/><path d="M8 21h8M12 17v4"/></svg>';
+
+    // Curated Technical Skills layout — focused on Data Analytics, BI, Analytics
+    // Engineering & Product roles. AI/LLM/automation tools live in the dedicated
+    // "Passionate about AI & Automation" section (AUTOMATION_TOOLS below).
+    const SKILL_COLUMNS = [
+      { head:'Programming & Data', icon:IC_CODE, groups:[
+        {label:'Languages & Libraries', tools:['python','sql','r','java','pandas','numpy']},
+        {label:'Databases & Warehouses', tools:['postgresql','bigquery','bigqueryml','snowflake']}
+      ]},
+      { head:'Analytics & Business Intelligence', icon:IC_CHART, groups:[
+        {label:'Tools', tools:['tableau','powerbi','looker','excel','celonis']}
+      ], caps:['Data Analysis','Dashboard Development','Data Modeling','ETL / ELT','KPI Reporting','Data Storytelling','Statistical Analysis','A/B Testing'] },
+      { head:'Analytics Engineering & Cloud', icon:IC_DB, groups:[
+        {label:'Cloud & Deployment', tools:['googlecloud','aws','docker','dbt','airflow','databricks']},
+        {label:'Development Tools', tools:['git','github','nextjs','typescript']}
+      ], caps:['Data Transformation','Pipeline Orchestration','Cloud Data Warehousing','Data Quality Testing','Workflow Automation','Data Governance'] },
+      { head:'Product & Business', icon:IC_PRODUCT, groups:[
+        {label:'Product & Design', tools:['figma','notion','jira','canva']}
+      ], caps:['Product Thinking','Business Analysis','Stakeholder Communication','Process Improvement','Requirements Gathering','User Journey Mapping'] }
+    ];
+
+    // Curated AI / LLM / automation stack for the "Passionate about AI & Automation"
+    // section. Every entry is a real project tool, so all are clickable filters.
+    const AUTOMATION_TOOLS = ['openai','claude','scikitlearn','xgboost','fastapi','make','airtable','vapi','twilio','lovable'];
+
+    // Tool ids actually used across projects — a tool is clickable when it powers a project.
+    const projectToolIds = new Set();
+    PROJECTS_DATA.forEach(p=>p.tools.forEach(t=>{
+      const id = toolId(t);
+      if(id && TOOLS[id] && TOOLS[id].skill!==false) projectToolIds.add(id);
+    }));
+
+    // Stamp registry visibility/clickability flags from the curated layouts so the
+    // central TOOLS registry stays the single source of truth.
+    (function stampToolFlags(){
+      const inTS = new Set();
+      SKILL_COLUMNS.forEach(c=>c.groups.forEach(g=>g.tools.forEach(id=>inTS.add(id))));
+      const inAI = new Set(AUTOMATION_TOOLS);
+      Object.keys(TOOLS).forEach(id=>{
+        TOOLS[id].showInTechnicalSkills  = inTS.has(id);
+        TOOLS[id].showInAutomationSection = inAI.has(id);
+        TOOLS[id].clickable = projectToolIds.has(id);
+      });
+    })();
+
+    function skillChip(id){
+      const t = TOOLS[id]; if(!t) return '';
+      const star = t.learning ? '<sup class="learn">★</sup>' : '';
+      if(projectToolIds.has(id)){
+        return `<button class="tool" type="button" data-tool="${id}" title="Show projects using ${esc(t.name)}" aria-label="Show projects using ${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}${star}</button>`;
+      }
+      return `<span class="tool" title="${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}${star}</span>`;
+    }
+
+    function renderSkills(){
+      const grid = document.getElementById('skills-grid');
+      if(!grid) return;
+      grid.innerHTML = SKILL_COLUMNS.map(col=>{
+        const groups = col.groups.map(g=>
+          `<div class="skill-sub">${esc(g.label)}</div><div class="tool-list">${g.tools.map(skillChip).join('')}</div>`
+        ).join('');
+        const caps = col.caps ? `<div class="skill-sub">Capabilities</div><div class="cap-list">${col.caps.map(c=>`<span class="cap">${esc(c)}</span>`).join('')}</div>` : '';
+        return `<div class="skill-col">
+          <div class="skill-col-head"><div class="skill-col-ic">${col.icon}</div><h4>${esc(col.head)}</h4></div>
+          ${groups}${caps}
+        </div>`;
+      }).join('');
+    }
+    renderSkills();
+
+    // "Passionate about AI & Automation" — clickable AI/automation chips (same filter behaviour)
+    function aiChip(id){
+      const t = TOOLS[id]; if(!t) return '';
+      if(TOOLS[id].clickable){
+        return `<button class="ai-chip" type="button" data-tool="${id}" title="Show projects using ${esc(t.name)}" aria-label="Show projects using ${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}</button>`;
+      }
+      return `<span class="ai-chip">${iconFor(id,t.name)}${esc(t.name)}</span>`;
+    }
+    function renderAITools(){
+      const box = document.getElementById('ai-tools');
+      if(!box) return;
+      box.innerHTML = AUTOMATION_TOOLS.map(aiChip).join('');
+    }
+    renderAITools();
+
+    /* ============================================================
+       FILTERING — domain tabs + click-a-skill filtering
+    ============================================================ */
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const filterBtns = Array.from(document.querySelectorAll('.pf-btn'));
+    const note      = document.getElementById('skill-filter-note');
+    const noteName  = document.getElementById('skill-filter-name');
+    const clearBtn  = document.getElementById('skill-filter-clear');
+    let currentDomain = 'all';
+    let currentSkill  = null;
+
+    function applyView(){
+      document.querySelectorAll('.domain-group').forEach(g=>{
+        const domainMatch = (currentDomain==='all' || g.dataset.domain===currentDomain);
+        let anyMatch = false;
+        g.querySelectorAll('.pcard').forEach(card=>{
+          const tools = (card.dataset.tools||'').split(' ');
+          const skillMatch = !currentSkill || tools.indexOf(currentSkill)>-1;
+          card.classList.toggle('dim', !!currentSkill && !skillMatch);
+          if(skillMatch) anyMatch = true;
+        });
+        g.hidden = !domainMatch || (!!currentSkill && !anyMatch);
+      });
+    }
+
+    function setDomain(f){
+      currentDomain = f;
+      currentSkill = null;
+      note.classList.remove('show');
+      filterBtns.forEach(b=>{
+        const on = b.dataset.filter===f;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', String(on));
+      });
+      markActiveChips();
+      applyView();
+    }
+    function markActiveChips(){
+      document.querySelectorAll('[data-tool]').forEach(el=>{
+        el.classList.toggle('active', !!currentSkill && el.dataset.tool===currentSkill);
+      });
+    }
+    function selectSkill(id){
+      const t = TOOLS[id]; if(!t) return;
+      currentSkill = id;
+      currentDomain = 'all';
+      filterBtns.forEach(b=>{
+        const on = b.dataset.filter==='all';
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', String(on));
+      });
+      applyView();
+      markActiveChips();
+      noteName.textContent = t.name;
+      note.classList.add('show');
+      const anchor = document.getElementById('projects');
+      if(anchor) anchor.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'});
+    }
+    function clearSkill(){
+      currentSkill = null;
+      note.classList.remove('show');
+      markActiveChips();
+      applyView();
+    }
+
+    filterBtns.forEach(btn=>btn.addEventListener('click', ()=>{
+      setDomain(btn.dataset.filter);
+      const anchor = document.getElementById('projects');
+      if(anchor) anchor.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'});
+    }));
+    if(clearBtn) clearBtn.addEventListener('click', clearSkill);
+
+    const skillsGrid = document.getElementById('skills-grid');
+    if(skillsGrid){
+      skillsGrid.addEventListener('click', e=>{
+        const b = e.target.closest('button.tool[data-tool]');
+        if(b) selectSkill(b.dataset.tool);
+      });
+    }
+    const aiTools = document.getElementById('ai-tools');
+    if(aiTools){
+      aiTools.addEventListener('click', e=>{
+        const b = e.target.closest('button.ai-chip[data-tool]');
+        if(b) selectSkill(b.dataset.tool);
+      });
+    }
+  })();
+
+  // Staggered reveal on scroll
+  document.querySelectorAll('[data-stagger], .skills4, .honors-row, .leadership-grid').forEach(group => {
+    group.querySelectorAll(':scope > .fade-up').forEach((el, i) => {
+      el.style.transitionDelay = (i * 80) + 'ms';
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Subtle parallax on hero photo
+  const photo = document.querySelector('.hero-photo-wrap');
+  if(photo && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if(y < 900) photo.style.transform = 'translateY(' + (y * 0.04) + 'px)';
+    }, {passive:true});
+  }
+</script>
+
+</body>
+</html>

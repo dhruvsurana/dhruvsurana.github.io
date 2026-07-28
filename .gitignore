@@ -1,0 +1,23 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+._*
+
+# ===== Editors =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Dependencies / logs =====
+node_modules/
+*.log
+npm-debug.log*
+
+# ===== Deployment / tooling =====
+.vercel/
+.netlify/
+.pylibs/
+
+# ===== Working source PDFs (NOT part of the published site) =====
+# Only root-level PDFs are ignored; assets/*.pdf (the resume) stays tracked.
+/*.pdf
