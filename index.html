@@ -490,7 +490,6 @@
   button.ai-chip{cursor:pointer;}
   .ai-chip:hover{transform:translateY(-3px);border-color:var(--gold-line);box-shadow:0 10px 24px -14px rgba(217,180,92,0.7);}
   .ai-chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
-  .ai-chip.active{border-color:var(--gold);background:var(--gold-dim);color:var(--text);}
   .ai-chip img,.ai-chip .tool-ic-fb,.ai-chip svg{width:18px;height:18px;flex-shrink:0;}
 
   /* ================= EDUCATION ================= */
@@ -657,8 +656,14 @@
     border:1px solid var(--card-border);border-radius:20px;
     background:var(--card);overflow:hidden;
     transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+    scroll-margin-top:90px; /* clear of the fixed header when jumped to from a skill */
   }
   .pcard:hover{transform:translateY(-6px);border-color:var(--card-border-hover);box-shadow:0 40px 80px -44px rgba(0,0,0,0.85);}
+  /* Temporary destination emphasis when a skill/tool chip jumps here (auto-removed via JS) */
+  .pcard.project-jump-highlight{
+    border-color:var(--gold);
+    box-shadow:0 0 0 1px var(--gold), 0 26px 64px -22px rgba(217,180,92,.6);
+  }
   /* Media adapts to each image's aspect ratio → full image visible, minimal empty space */
   .pcard-media{
     position:relative;overflow:hidden;
@@ -748,7 +753,7 @@
   .details-inner .label{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:12px;}
   @media (prefers-reduced-motion: reduce){
     .details-panel{transition:none;}
-    .pcard-media img,.pcard:hover .pcard-media img{transition:none;transform:none;}
+    .pcard,.pcard-media img,.pcard:hover .pcard-media img{transition:none;transform:none;}
   }
 
   /* ================= RECOGNITION ================= */
@@ -912,32 +917,6 @@
   .pcard-award svg{width:14px;height:14px;stroke:#191204;flex-shrink:0;}
   .pcard-award b{font-weight:700;}
 
-  /* ================= SKILL FILTER (projects) ================= */
-  .pcard{transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease, opacity .3s ease, filter .3s ease;}
-  .pcard.dim{opacity:.24;filter:saturate(.4);pointer-events:none;}
-  .domain-group.dim-empty{display:none;}
-  .skill-filter-note{
-    display:none;align-items:center;gap:14px;margin:-30px 0 44px;
-    font-size:13.5px;color:var(--text-dim);
-    background:var(--card);border:1px solid var(--gold-line);
-    border-radius:100px;padding:9px 9px 9px 18px;width:fit-content;max-width:100%;
-  }
-  .skill-filter-note.show{display:inline-flex;}
-  .skill-filter-note .sf-icon{width:16px;height:16px;stroke:var(--gold-soft);flex-shrink:0;}
-  .skill-filter-note b{color:var(--gold-soft);font-weight:600;}
-  .skill-filter-clear{
-    display:inline-flex;align-items:center;gap:6px;cursor:pointer;
-    font-family:var(--body);font-size:12.5px;font-weight:600;color:var(--text-dim);
-    background:var(--bg-soft);border:1px solid var(--card-border);
-    padding:6px 13px;border-radius:100px;transition:color .2s ease,border-color .2s ease;
-  }
-  .skill-filter-clear:hover{color:var(--gold-soft);border-color:var(--gold-line);}
-  .skill-filter-clear:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
-  .skill-filter-clear svg{width:12px;height:12px;stroke:currentColor;}
-  @media (prefers-reduced-motion: reduce){
-    .pcard{transition:none;}
-  }
-
   /* ================= RESPONSIVE ================= */
   @media (max-width:1024px){
     .skills4{grid-template-columns:repeat(2,1fr);}
@@ -970,7 +949,6 @@
     .ai-callout{flex-direction:column;align-items:flex-start;}
     .contact-section h2{font-size:32px;}
     .contact-section .sub{font-size:14.5px;}
-    .skill-filter-note{margin:-14px 0 32px;}
   }
 </style>
 </head>
@@ -1042,7 +1020,7 @@
 
     <p class="tool-hint fade-up">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-      Tip: click any tool to jump to the projects that use it.
+      Tip: click any tool to jump to the first project that uses it.
     </p>
 
     <!-- Technical Skills are rendered from the central tool registry (see script) -->
@@ -1056,7 +1034,7 @@
         <div class="ai-spark">✦</div>
         <div>
           <h3>Passionate about AI &amp; Automation</h3>
-          <p>I live in the modern AI stack — click any tool to see the projects it powers.</p>
+          <p>I live in the modern AI stack — click any tool to jump to a project that uses it.</p>
         </div>
       </div>
       <div class="ai-tools" id="ai-tools"></div>
@@ -1201,15 +1179,6 @@
       <button class="pf-btn" role="tab" aria-selected="false" data-filter="analytics">Analytics &amp; BI <span class="pf-count">4</span></button>
       <button class="pf-btn" role="tab" aria-selected="false" data-filter="product">Product Management <span class="pf-count">2</span></button>
       <button class="pf-btn" role="tab" aria-selected="false" data-filter="ai">AI Systems <span class="pf-count">2</span></button>
-    </div>
-
-    <!-- Active skill filter (set when a Technical Skill is clicked) -->
-    <div class="skill-filter-note" id="skill-filter-note" role="status" aria-live="polite">
-      <svg class="sf-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
-      <span>Showing projects using <b id="skill-filter-name"></b></span>
-      <button class="skill-filter-clear" id="skill-filter-clear" type="button" aria-label="Clear skill filter and show all projects">Clear skill filter
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-      </button>
     </div>
 
     <!-- Projects rendered from data (see PROJECTS_DATA in script) -->
@@ -1773,7 +1742,7 @@
     ];
 
     // Curated AI / LLM / automation stack for the "Passionate about AI & Automation"
-    // section. Every entry is a real project tool, so all are clickable filters.
+    // section. Every entry is a real project tool, so all are clickable.
     const AUTOMATION_TOOLS = ['openai','claude','scikitlearn','xgboost','fastapi','make','airtable','vapi','twilio','lovable'];
 
     // Tool ids actually used across projects — a tool is clickable when it powers a project.
@@ -1800,7 +1769,7 @@
       const t = TOOLS[id]; if(!t) return '';
       const star = t.learning ? '<sup class="learn">★</sup>' : '';
       if(projectToolIds.has(id)){
-        return `<button class="tool" type="button" data-tool="${id}" title="Show projects using ${esc(t.name)}" aria-label="Show projects using ${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}${star}</button>`;
+        return `<button class="tool" type="button" data-tool="${id}" title="Jump to the first project using ${esc(t.name)}" aria-label="Jump to the first project using ${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}${star}</button>`;
       }
       return `<span class="tool" title="${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}${star}</span>`;
     }
@@ -1821,11 +1790,11 @@
     }
     renderSkills();
 
-    // "Passionate about AI & Automation" — clickable AI/automation chips (same filter behaviour)
+    // "Passionate about AI & Automation" — chips jump to the first matching project
     function aiChip(id){
       const t = TOOLS[id]; if(!t) return '';
       if(TOOLS[id].clickable){
-        return `<button class="ai-chip" type="button" data-tool="${id}" title="Show projects using ${esc(t.name)}" aria-label="Show projects using ${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}</button>`;
+        return `<button class="ai-chip" type="button" data-tool="${id}" title="Jump to the first project using ${esc(t.name)}" aria-label="Jump to the first project using ${esc(t.name)}">${iconFor(id,t.name)}${esc(t.name)}</button>`;
       }
       return `<span class="ai-chip">${iconFor(id,t.name)}${esc(t.name)}</span>`;
     }
@@ -1837,91 +1806,63 @@
     renderAITools();
 
     /* ============================================================
-       FILTERING — domain tabs + click-a-skill filtering
+       PROJECT NAVIGATION
+       - Domain category tabs (All / Analytics & BI / Product / AI): unchanged.
+       - Clicking a Technical Skill or AI tool: smooth-scroll to the FIRST
+         project that uses it. No filtering — every project stays visible.
     ============================================================ */
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const filterBtns = Array.from(document.querySelectorAll('.pf-btn'));
-    const note      = document.getElementById('skill-filter-note');
-    const noteName  = document.getElementById('skill-filter-name');
-    const clearBtn  = document.getElementById('skill-filter-clear');
     let currentDomain = 'all';
-    let currentSkill  = null;
 
+    // --- Domain category tabs (separate, intentional feature — preserved) ---
     function applyView(){
       document.querySelectorAll('.domain-group').forEach(g=>{
-        const domainMatch = (currentDomain==='all' || g.dataset.domain===currentDomain);
-        let anyMatch = false;
-        g.querySelectorAll('.pcard').forEach(card=>{
-          const tools = (card.dataset.tools||'').split(' ');
-          const skillMatch = !currentSkill || tools.indexOf(currentSkill)>-1;
-          card.classList.toggle('dim', !!currentSkill && !skillMatch);
-          if(skillMatch) anyMatch = true;
-        });
-        g.hidden = !domainMatch || (!!currentSkill && !anyMatch);
+        g.hidden = !(currentDomain==='all' || g.dataset.domain===currentDomain);
       });
     }
-
     function setDomain(f){
       currentDomain = f;
-      currentSkill = null;
-      note.classList.remove('show');
       filterBtns.forEach(b=>{
         const on = b.dataset.filter===f;
         b.classList.toggle('active', on);
         b.setAttribute('aria-selected', String(on));
       });
-      markActiveChips();
       applyView();
     }
-    function markActiveChips(){
-      document.querySelectorAll('[data-tool]').forEach(el=>{
-        el.classList.toggle('active', !!currentSkill && el.dataset.tool===currentSkill);
-      });
-    }
-    function selectSkill(id){
-      const t = TOOLS[id]; if(!t) return;
-      currentSkill = id;
-      currentDomain = 'all';
-      filterBtns.forEach(b=>{
-        const on = b.dataset.filter==='all';
-        b.classList.toggle('active', on);
-        b.setAttribute('aria-selected', String(on));
-      });
-      applyView();
-      markActiveChips();
-      noteName.textContent = t.name;
-      note.classList.add('show');
-      const anchor = document.getElementById('projects');
-      if(anchor) anchor.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'});
-    }
-    function clearSkill(){
-      currentSkill = null;
-      note.classList.remove('show');
-      markActiveChips();
-      applyView();
-    }
-
     filterBtns.forEach(btn=>btn.addEventListener('click', ()=>{
       setDomain(btn.dataset.filter);
       const anchor = document.getElementById('projects');
       if(anchor) anchor.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'});
     }));
-    if(clearBtn) clearBtn.addEventListener('click', clearSkill);
 
+    // --- Click a skill/tool → jump to the first project that uses it ---
+    let highlightTimer = null;
+    function jumpToSkill(id){
+      if(!id) return;
+      const matches = Array.from(document.querySelectorAll('.pcard[data-tools~="'+id+'"]'));
+      if(!matches.length) return; // clickable chips are always project-backed, so this is a safety net
+      // Prefer a card that's currently visible; if it's hidden by an active
+      // domain tab, fall back to "All Projects" so the destination is shown.
+      let card = matches.find(c=>{ const g = c.closest('.domain-group'); return !g || !g.hidden; });
+      if(!card){ setDomain('all'); card = matches[0]; }
+      card.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'});
+      // Brief, self-clearing highlight so the visitor understands the jump.
+      document.querySelectorAll('.project-jump-highlight').forEach(el=>el.classList.remove('project-jump-highlight'));
+      if(highlightTimer) clearTimeout(highlightTimer);
+      card.classList.add('project-jump-highlight');
+      highlightTimer = setTimeout(()=>card.classList.remove('project-jump-highlight'), 1800);
+    }
+
+    // Buttons fire click on Enter/Space natively → keyboard accessible for free.
+    function onChipActivate(e){
+      const b = e.target.closest('button[data-tool]');
+      if(b) jumpToSkill(b.dataset.tool);
+    }
     const skillsGrid = document.getElementById('skills-grid');
-    if(skillsGrid){
-      skillsGrid.addEventListener('click', e=>{
-        const b = e.target.closest('button.tool[data-tool]');
-        if(b) selectSkill(b.dataset.tool);
-      });
-    }
+    if(skillsGrid) skillsGrid.addEventListener('click', onChipActivate);
     const aiTools = document.getElementById('ai-tools');
-    if(aiTools){
-      aiTools.addEventListener('click', e=>{
-        const b = e.target.closest('button.ai-chip[data-tool]');
-        if(b) selectSkill(b.dataset.tool);
-      });
-    }
+    if(aiTools) aiTools.addEventListener('click', onChipActivate);
   })();
 
   // Staggered reveal on scroll
